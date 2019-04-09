@@ -1,0 +1,1041 @@
+/* 內頁 原創發表 */
+
+.bg-grey {
+    width: 100%;
+    background: #fafafa !important;
+    padding-top: 20px;
+}
+
+@media all and (min-width: 0px) and (max-width:1024px) {
+    .bg-grey {
+        padding-top: 0px;
+    }
+}
+
+.videoContainer,
+.videoinfoBox {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+@media all and (min-width: 641px) and (max-width:1140px) {
+
+    .videoContainer,
+    .videoinfoBox {
+        position: relative;
+        width: 90%;
+        margin: 40px auto 0px auto;
+        overflow-x: hidden;
+    }
+
+    .videoinfoBox .titleBox .container {
+        max-width: 100%;
+        margin: 20px auto 30px auto;
+    }
+}
+
+.videoinfoBox .titleBox {
+    width: 100%;
+    background: #fff;
+}
+
+.videoContainer .container,
+.videoinfoBox .titleBox .container {
+    max-width: 1140px;
+    margin: 20px auto 30px auto;
+}
+
+.videoContainer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.videoContainer .container .page_main {
+    width: 60%;
+}
+
+.videoContainer .container .page_right {
+    width: 35%;
+}
+
+.videoContainer .container .page_right .titleA {
+    font-size: 18px;
+    border-bottom: 1px solid #b13120;
+    color: #b13120;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.videoContainer .container .page_right .org_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 0px 5px 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.videoContainer .container .page_right .org_list:last-child {
+    border: none;
+}
+
+.videoContainer .container .page_right .org_list .b_video {
+    width: 40%;
+}
+
+.videoContainer .container .page_right .org_list .b_video iframe {
+    height: 90px;
+}
+
+@media all and (min-width: 0px) and (max-width:768px) {
+    .videoContainer .container {
+        flex-wrap: wrap;
+    }
+
+    .videoContainer .container .page_right {
+        width: 100%;
+    }
+}
+
+.videoContainer .container .page_right .org_list .b_txt {
+    font-size: 13px;
+    color: #606060;
+    width: 55%;
+    cursor: pointer;
+}
+
+.videoContainer .container .page_right .org_list .b_txt h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #484848;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin: 4px 0px;
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.videoContainer .container .page_right .org_list .b_txt h3:hover {
+    color: #000;
+}
+
+.videoContainer .container .page_right .org_list .b_txt .b_info {
+    font-size: 12px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0px;
+    cursor: default;
+}
+
+.videoContainer .container .page_right .moreBox .moreBtn {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.videoContainer .container .page_right .moreBox .moreBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 35px;
+    background: #b13120;
+    color: #fff;
+    border: 1px solid #b13120;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .videoContainer .container .page_right .moreBox .moreBtn a {
+        width: 100%;
+    }
+}
+
+.videoContainer .container .page_right .moreBox .moreBtn a span {
+    padding-left: 6px;
+}
+
+@media all and (min-width: 0px) and (max-width:1140px) {
+
+    .videoContainer .container,
+    .videoinfoBox .titleBox .container {
+        width: 100%;
+        margin: 20px auto 30px auto;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+
+    .videoContainer,
+    .videoinfoBox {
+        position: relative;
+        width: 96%;
+        margin: 40px auto 0px auto;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+
+    .videoContainer,
+    .videoinfoBox {
+        position: relative;
+        width: 96%;
+        margin: 20px auto 0px auto;
+    }
+}
+
+.videoinfoBox .titleBox .container h2 {
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #d23d29;
+}
+
+.videoinfoBox .titleBox .container h2::after {
+    border-bottom: 3px solid #d23d29;
+    bottom: -1px;
+    content: ".";
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 72px;
+    left: 0;
+}
+
+.videoinfoBox .titleBox .container h2 a {
+    color: #d23d29;
+}
+
+.videoinfoBox .titleBox .container h2 a:hover {
+    color: #b93625;
+}
+
+.videoinfoBox .infoBox {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 60px;
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+    .videoinfoBox .infoBox {
+        padding-bottom: 100px;
+    }
+}
+
+.videoinfoBox .infoBox .container {
+    max-width: 1140px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.videoinfoBox .infoBox .container .org_list {
+    width: 24%;
+    margin-right: 1.2%;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .videoinfoBox .infoBox .container .org_list {
+        width: 32.5%;
+        margin-right: 1.2%;
+        margin-bottom: 20px;
+    }
+}
+
+.videoinfoBox .infoBox .container .w50 {
+    width: 48.8%;
+    margin-right: 2.4%;
+    margin-bottom: 20px;
+}
+
+.videoinfoBox .infoBox .container .w50:nth-child(2n) {
+    margin-right: 0%;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .videoinfoBox .infoBox .container .w50 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+
+    .videoinfoBox .infoBox .container .org_list,
+    .videoinfoBox .infoBox .container .w50 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+}
+
+.videoinfoBox .infoBox .container .org_list:nth-child(4n) {
+    margin-right: 0%;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .videoinfoBox .infoBox .container .org_list:nth-child(3n) {
+        margin-right: 0%;
+    }
+
+    .videoinfoBox .infoBox .container .org_list:nth-child(4n) {
+        margin-right: 1.2%;
+    }
+
+    .videoinfoBox .infoBox .container .w50:nth-child(4n) {
+        margin-right: 0%;
+    }
+
+    .videoinfoBox .infoBox .container .w50:nth-child(3n) {
+        margin-right: 2.4%;
+    }
+
+    .videoinfoBox .infoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+    .videoinfoBox .infoBox .container .org_list:nth-child(3n) {
+        margin-right: 1.2%;
+    }
+
+    .videoinfoBox .infoBox .container .org_list:nth-child(4n) {
+        margin-right: 1.2%;
+    }
+
+    .videoinfoBox .infoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+    .videoinfoBox .infoBox .container .org_list .b_video iframe {
+        height: 220px !important;
+    }
+
+    .videoinfoBox .infoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+    .videoinfoBox .infoBox .container .org_list {
+        width: 49%;
+        margin-right: 1.5%;
+        margin-bottom: 20px;
+    }
+
+    .videoinfoBox .infoBox .container .org_list:nth-child(2n),
+    .videoinfoBox .infoBox .container .org_list:nth-child(4n) {
+        margin-right: 0%;
+    }
+}
+
+.videoinfoBox .infoBox .container .org_list .b_txt {
+    font-size: 13px;
+    color: #606060;
+}
+
+.videoinfoBox .infoBox .container .org_list .b_txt h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #484848;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin: 4px 0px;
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.videoinfoBox .infoBox .container .org_list .b_txt h3:hover {
+    color: #000;
+}
+
+.videoinfoBox .infoBox .container .org_list .b_info {
+    font-size: 12px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0px;
+}
+
+.videoinfoBox .infoBox .moreBox {
+    width: 100%;
+}
+
+.videoinfoBox .infoBox .moreBox .moreBtn {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.videoinfoBox .infoBox .moreBox .moreBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 35px;
+    background: #b13120;
+    color: #fff;
+    border: 1px solid #b13120;
+}
+
+.videoinfoBox .infoBox .moreBox .moreBtn a span {
+    padding-left: 6px;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .videoinfoBox .infoBox .moreBox .moreBtn a {
+        width: 100%;
+    }
+}
+
+.videoinfoBox .infoBox .moreBox .moreBtn a:hover {
+    color: #b13120;
+    background: none;
+}
+
+.videoinfoBox .infoBox .box_c {
+    max-width: 1140px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .videoinfoBox .infoBox .box_c .t_main {
+        margin-bottom: 20px;
+    }
+}
+
+.videoinfoBox .infoBox .box_c a {
+    color: #fff;
+    background: #b13120;
+    width: 140px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoinfoBox .infoBox .box_c .searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.videoinfoBox .infoBox .box_c .searchBox .searchselect span {
+    font-size: 24px;
+    color: #666;
+    margin-right: 4px;
+}
+
+.videoinfoBox .infoBox .box_c .searchBox .searchselect .b_select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #f2f2f2;
+    color: #333;
+    width: 160px;
+    height: 36px;
+    border: none;
+    border-radius: 0px;
+    padding-left: 10px;
+    margin-right: 8px;
+    background: url(../images/search_bg.png) no-repeat;
+}
+
+.videoinfoBox .infoBox .box_c .searchBox .music_s {
+    width: 60px;
+    height: 36px;
+    background: #999;
+    color: #fff;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.videoinfoBox .infoBox .box_c .searchBox .music_s:hover {
+    background: #333;
+}
+
+.videoContainer .container .page_main .org_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 0px 5px 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.videoContainer .container .page_main .org_list:last-child {
+    border: none;
+}
+
+.videoContainer .container .page_main .org_list .b_video {
+    width: 100%;
+}
+
+.videoContainer .container .page_main .org_list .b_video iframe {
+    height: 375px;
+}
+
+@media all and (min-width: 0px) and (max-width:768px) {
+    .videoContainer .container {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .videoContainer .container .page_main {
+        width: 100%;
+    }
+
+    .videoContainer .container .page_main .org_list .b_video iframe {
+        height: 220px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .videoContainer .container .page_main .org_list .b_video iframe {
+        height: 220px;
+    }
+}
+
+@media all and (min-width: 415px) and (max-width:768px) {
+    .videoContainer .container {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .videoContainer .container .page_main .org_list .b_video iframe {
+        height: 375px;
+    }
+}
+
+.videoContainer .container .page_main .org_list .b_txt {
+    font-size: 15px;
+    color: #606060;
+    width: 100%;
+    cursor: pointer;
+}
+
+.videoContainer .container .page_main .org_list .b_txt h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin: 8px 0px;
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.videoContainer .container .page_main .org_list .b_txt h3:hover {
+    color: #000;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info {
+    font-size: 14px;
+    color: #484848;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0px 12px 0px;
+    cursor: default;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .views {
+    font-size: 17px;
+    color: #6a6a6a;
+    font-weight: lighter;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .collection {
+    background: #b93625;
+    width: 120px;
+    height: 36px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .btngrey {
+    background: #888 !important;
+    cursor: default;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .collection a {
+    color: #fff;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .collection:hover {
+    background: #d23d29;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .score {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .scoreall {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    font-size: 18px;
+    color: #6a6a6a;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .scoreall b {
+    top: 2px;
+    position: absolute;
+    color: #b13120;
+    right: 22px;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .scoreall span {
+    color: #b13120;
+    font-size: 18px;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_info .score span {
+    color: #b13120;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .data {
+    font-size: 13px;
+    color: #848484;
+    margin: 6px 0px;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .videoinfo {
+    margin-top: 10px;
+    border-top: 1px solid #fafafa;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .videoinfo .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #333;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .videoinfo .box {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.videoContainer .container .page_main .org_list .b_txt .b_icon {
+    margin: 20px 0px;
+}
+
+.videoContainer .container .page_main .messageBox {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border: none !important;
+}
+
+.videoContainer .container .page_main .messageBox ul {
+    width: 100%;
+    border-bottom: 1px solid #b93625;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.videoContainer .container .page_main .messageBox ul.tab li {
+    background: #848484;
+    width: 100px;
+    height: 36px;
+    margin-right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .messageBox ul.tab li.active {
+    background: #b93625;
+}
+
+.videoContainer .container .page_main .messageBox ul.tab li a {
+    color: #fff;
+}
+
+.videoContainer .container .page_main .messageBox .b_message {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.videoContainer .container .page_main .messageBox .mg_photo {
+    line-height: 0;
+    float: left;
+    width: 80px;
+}
+
+.videoContainer .container .page_main .messageBox .mg_photo span {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.videoContainer .container .page_main .messageBox .mg_photo img {
+    left: 0 !important;
+    top: 0 !important;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.videoContainer .container .page_main .messageBox form {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .messageBox .mg_form {
+    float: left;
+    width: calc(100% - 80px);
+    padding-left: 15px;
+    position: relative;
+}
+
+.videoContainer .container .page_main .messageBox .storBox {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: #e5e5e5 solid 1px;
+    border-bottom: #e5e5e5 solid 1px;
+    padding: 7px 0;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_total {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', "微軟正黑體";
+    font-weight: bold;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_list {
+    float: right;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_list ul {
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_list li {
+    float: left;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_list a {
+    font-size: 14px;
+    color: #666;
+    margin-left: 15px;
+}
+
+.videoContainer .container .page_main .messageBox .storBox .s_list .active {
+    color: #d83535;
+    text-decoration: underline;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info {
+    float: left;
+    width: calc(100% - 80px);
+    padding-left: 15px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_name {
+    float: left;
+    margin: 2px 0px 4px 0px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_name span {
+    color: #999;
+    font-size: 12px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_name a {
+    font-size: 15px;
+    color: #000;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_name a:hover {
+    text-decoration: underline;
+}
+
+.cm_list .s_comment .mg_info .mg_rate {
+    float: right;
+    position: relative;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_rate .icon-happy em {
+    font-size: 14px;
+    color: #d10000;
+    margin-left: -5px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_rate .icon-sad em {
+    font-size: 14px;
+    color: #117600;
+    margin-left: -5px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_rate .time {
+    font-size: 13px;
+    color: #999999;
+    display: block;
+    position: absolute;
+    top: 65px;
+    right: 2px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_text {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    color: #333;
+    line-height: 24px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_reply {
+    float: left;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_reply a {
+    font-size: 13px;
+    color: #033a95;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_reply a span {
+    padding-right: 3px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info {
+    float: left;
+    width: calc(100% - 80px);
+    padding-left: 15px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_name {
+    float: left;
+    margin: 2px 0px 4px 0px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_name span {
+    color: #999;
+    font-size: 13px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_name a {
+    font-size: 15px;
+    color: #000;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_name a:hover {
+    text-decoration: underline;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate {
+    float: right;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_up a,
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_down a {
+    font-size: 0;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_up {
+    margin-right: 10px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_up a:before {
+    content: "\f164";
+    color: #535353;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .icon-happy em {
+    font-size: 14px;
+    margin-left: -5px;
+    color: #d10000;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_down {
+    margin-right: 10px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .i_down a:before {
+    content: "\f165";
+    color: #535353;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .icon-sad em {
+    font-size: 14px;
+    color: #117600;
+    margin-left: -5px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_rate .time {
+    font-size: 13px;
+    color: #999999;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_rep_com .mg_info .mg_text {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    color: #333;
+    line-height: 24px;
+}
+
+.videoContainer .container .page_main .messageBox .cm_list .s_replies {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: #cccccc dotted 1px;
+    padding-left: 0;
+}
+
+@media (min-width: 480px) {
+    .videoContainer .container .page_main .messageBox .cm_list .s_replies {
+        width: 87%;
+        border-top: #cccccc solid 1px;
+        padding-left: 90px;
+    }
+}
+
+.videoContainer .container .page_main .messageBox .mg_form .message_c {
+    background: #eeeeee;
+    border: none;
+    resize: none;
+    height: 60px;
+    width: 84%;
+    padding: 10px 0px 10px 15px;
+    font-size: 15px;
+    color: #333;
+    font-family: "微軟正黑體";
+}
+
+.videoContainer .container .page_main .messageBox .mg_form .b_submit {
+    background: #898989;
+    border: none;
+    float: right;
+    color: #fff;
+    font-size: 15px;
+    font-family: "微軟正黑體";
+    height: 80px;
+    padding: 0 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}

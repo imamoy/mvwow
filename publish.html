@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/member.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVWOW-會員中心</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="main-header">
+            <!-- logo start -->
+            <div class="header_left">
+                <a href="index.html">
+                    <span class="icon-logo"></span>
+                </a>
+            </div>
+            <!-- logo end -->
+            <div class="header_right">
+                <div class="header_c">
+                    <!-- <div class="login">
+                        <a href="login.html">登入</a>|
+                        <a href="signup.html">註冊</a>
+                    </div>
+                    <div class="fb_icon">
+                        <a href="">Facebook 註冊登入</a>
+                    </div> -->
+                    <div class="login">
+                        <a>
+                            <span class="icon-user"></span>admin12344</a>|
+                        <a href="memberCenter.html">會員中心</a>
+                    </div>
+                    <div class="logout">
+                        <a>登出</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                        <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
+                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- menu start -->
+    <div class="m_nav">
+        <ul class="menu">
+            <a class="logo hide" href="index.html">
+                MVWOW
+            </a>
+            <li>
+                <a href="original.html">原創發表</a>
+            </li>
+            <li>
+                <a href="master.html">一般發表</a>
+            </li>
+            <li>
+                <a href="publish.html">我要發表</a>
+            </li>
+            <li>
+                <a href="collection.html">我的收藏</a>
+            </li>
+            <li>
+                <a href="track.html">我的追蹤</a>
+            </li>
+        </ul>
+    </div>
+    <!-- menu end -->
+    <!-- login start -->
+    <div class="memberBox">
+        <div class="box01">
+            <div class="b_title">
+                <h3>
+                    <a href="login.html">
+                        <em>會員中心</em>
+                    </a>
+                </h3>
+            </div>
+
+            <div class="container">
+                <div class="page_left">
+                    <ul>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="memberCenter.html">基本資料</a>
+                        </li>
+                        <li class="active">
+                            <span class="icon-play2"></span>
+                            <a href="publish.html">我要發表</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="track.html">我的追蹤</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="collection.html">我的收藏</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="admin_publish.html">發表管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_main">
+                    <div class="loginform">
+                        <!-- <div class="titleA">
+                            <span class="icon-cloud-upload"></span>上傳發表影片
+                        </div> -->
+                        <div class="input_content inputmargin">
+                            <div class="title">發表類型</div>
+                            <ul class="radio">
+                                <li>
+                                    <div class="Area">
+                                        <input type="radio" id="f-option" name="selector">
+                                        <label for="f-option">原創發表（須為本人創作，<a href="">請先驗證行動電話</a>）</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <br>
+                                <li>
+                                    <div class="Area">
+                                        <input type="radio" id="s-option" name="selector">
+                                        <label for="s-option">一般發表</label>
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input_content inputmargin2">
+                            <div class="title titlepd">上傳方式<br><b class="choose">（二選一）</b></div>
+                            <ul class="radio">
+                                <li class="youtubeBtn">
+                                    <div class="Area">
+                                        <!-- <input type="radio" id="y-option" name="selector">
+                                        <label for="y-option" class="y-op">Youtube連結
+                                        </label> -->
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                        <div class="youtubeInput">
+                                            <input type="text" placeholder="複製貼上Youtube分享連結網址">
+                                            <a href="">複製圖例</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="Btn">
+                                    <div class="Area">
+                                        <!-- <input type="radio" id="o-option" name="selector">
+                                        <label for="o-option" class="o-op">一般發表</label> -->
+                                        <div class="check">
+                                            <div class="inside"></div>
+                                        </div>
+                                        <div class="BtnInput">
+                                            <a href="">選擇檔案</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input_content">
+                            <div class="title">樂器分類</div>
+                            <div class="searchselect">
+                                <select id="category0" class="b_select">
+                                    <option value="none">請選擇</option>
+                                    <option value="-1" data-deep="0" data-array-index="0">鋼琴 </option>
+                                    <option value="-2" data-deep="0" data-array-index="1">電子琴 </option>
+                                    <option value="-3" data-deep="0" data-array-index="2">提琴 </option>
+                                    <option value="-4" data-deep="0" data-array-index="3">吉他貝斯 </option>
+                                    <option value="-5" data-deep="0" data-array-index="4">管樂 </option>
+                                    <option value="-6" data-deep="0" data-array-index="5">歌唱 </option>
+                                    <option value="-7" data-deep="0" data-array-index="6">樂理 </option>
+                                    <option value="-8" data-deep="0" data-array-index="7">作曲編曲 </option>
+                                    <option value="-9" data-deep="0" data-array-index="8">爵士鼓 </option>
+                                    <option value="-10" data-deep="0" data-array-index="9">打擊 </option>
+                                    <option value="-11" data-deep="0" data-array-index="10">國樂(吹) </option>
+                                    <option value="-12" data-deep="0" data-array-index="11">國樂(拉) </option>
+                                    <option value="-13" data-deep="0" data-array-index="12">國樂(彈) </option>
+                                    <option value="-14" data-deep="0" data-array-index="13">國樂(打) </option>
+                                    <option value="-15" data-deep="0" data-array-index="14">其他 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input_content">
+                            <div class="title">影片標題</div>
+                            <input type="text" placeholder="建議40字內">
+                        </div>
+                        <div class="input_content">
+                            <div class="title MT">影片說明</div>
+                            <textarea placeholder="建議撰寫50～200字影片說明（上限600字）" maxlength="200"></textarea>
+                        </div>
+                        <div class="input_content m20">
+                            <div class="title">&emsp;&emsp;&emsp;&emsp;</div>
+                            <div class="button2">
+                                <a href="" class="redbtn">上傳</a>
+                                <a href="" class="greybtn">清除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <!-- login end -->
+    <!-- foot start -->
+    <div class="mainfoot">
+        <div class="container">
+            <div class="footLink">
+                <div class="foot_x">
+                    <a href="about.html">關於我們</a>
+                    <a href="rules.html">使用條款</a>
+                    <a href="privacy.html">隱私權政策</a>
+                </div>
+                <div class="foot_x">
+                    <a href="suggest.html">指正建議</a>
+                    <a href="complaint.html">檢舉投訴</a>
+                    <a href="cooperation.html">廣告及合作</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot end -->
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/index.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVWOW-會員登入</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="main-header">
+            <!-- logo start -->
+            <div class="header_left">
+                <a href="index.html">
+                    <span class="icon-logo"></span>
+                </a>
+            </div>
+            <!-- logo end -->
+            <div class="header_right">
+                <div class="header_c">
+                    <div class="login">
+                        <a href="login.html">登入</a>|
+                        <a href="signup.html">註冊</a>
+                    </div>
+                    <div class="fb_icon">
+                        <a href="">Facebook 註冊登入</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                        <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
+                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- menu start -->
+    <div class="m_nav">
+        <ul class="menu">
+            <a class="logo hide" href="index.html">
+                MVWOW
+            </a>
+            <li>
+                <a href="original.html">原創發表</a>
+            </li>
+            <li>
+                <a href="master.html">一般發表</a>
+            </li>
+            <li>
+                <a href="publish.html">我要發表</a>
+            </li>
+            <li>
+                <a href="collection.html">我的收藏</a>
+            </li>
+            <li>
+                <a href="track.html">我的追蹤</a>
+            </li>
+        </ul>
+    </div>
+    <!-- menu end -->
+    <!-- login start -->
+    <div class="loginBox">
+        <div class="box01">
+            <div class="b_title">
+                <h3>
+                    <a href="login.html">
+                        <em>會員登入</em>
+                    </a>
+                </h3>
+            </div>
+            <div class="loginform">
+                <div class="input_content">
+                    <div class="title">帳號</div>
+                    <input type="text" placeholder="帳號">
+                </div>
+                <div class="input_content">
+                    <div class="title">密碼</div>
+                    <input type="text" placeholder="密碼">
+                </div>
+                <div class="input_content input_content2">
+                    <div class="title"><b>*</b>圖形驗證碼</div>
+                    <div class="input">
+                        <input type="text" placeholder="請填入右邊的驗證碼">
+                        <div class="pic">
+                            <img src="./images/code.png" alt="">
+                            <a href=""> <img class="refresh" src="./images/refresh-arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="f_member_remember">
+                    <div class="f_check">
+                        <input type="checkbox" class="checkbox"> 記住我
+                    </div>
+                    <span class="f_password_forgot">
+                        <a href="forget.html">忘記密碼</a>
+                    </span>
+                </div>
+                <div class="button">
+                    <a href="">登入</a>
+                </div>
+                <div class="another">
+                    不是註冊用戶?
+                    <a href="signup.html">申請</a>
+                    或使用
+                    <span class=" fb-login-button fb_iframe_widget " data-max-rows="1 " data-size="small
+                        "
+                        data-show-faces="false " data-auto-logout-link="false " style="display: inline " login_text=" "
+                        fb-xfbml-state="rendered " fb-iframe-plugin-query="app_id=1472579186405625&amp;auto_logout_link=false&amp;container_width=0&amp;locale=zh_TW&amp;max_rows=1&amp;sdk=joey&amp;show_faces=false&amp;size=small ">
+                        <span style="vertical-align: bottom; width: 53px; height: 18px; ">
+                            <iframe name="faab4a2736cdd4 " width="1000px " height="1000px " frameborder="0
+                        "
+                                allowtransparency="true " allowfullscreen="true " scrolling="no " allow="encrypted-media "
+                                title="fb:login_button Facebook Social Plugin
+                        " src="https://www.facebook.com/v2.5/plugins/login_button.php?app_id=1472579186405625&amp;auto_logout_link=false&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FbSTT5dUx9MY.js%3Fversion%3D42%23cb%3Df2c474edefff53c%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ffd12601003ba7c%26relation%3Dparent.parent&amp;container_width=0&amp;locale=zh_TW&amp;max_rows=1&amp;sdk=joey&amp;show_faces=false&amp;size=small "
+                                style="border: none; visibility: visible; width: 53px; height: 18px; " class=" "></iframe>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- login end -->
+    <!-- foot start -->
+    <div class="mainfoot fixed">
+        <div class="container">
+            <div class="footLink">
+                <div class="foot_x">
+                    <a href="about.html">關於我們</a>
+                    <a href="rules.html">使用條款</a>
+                    <a href="privacy.html">隱私權政策</a>
+                </div>
+                <div class="foot_x">
+                    <a href="suggest.html">指正建議</a>
+                    <a href="complaint.html">檢舉投訴</a>
+                    <a href="cooperation.html">廣告及合作</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot end -->
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
+</html>

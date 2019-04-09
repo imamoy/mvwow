@@ -1,0 +1,1100 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .fixed {
+        position: relative !important;
+    }
+}
+
+body {
+    line-height: 1;
+    color: black;
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif !important;
+    background: white;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: """";
+}
+
+header {
+    position: relative;
+    width: 100%;
+    border-top: 4px solid #d23d29;
+}
+
+.hide {
+    display: none !important;
+}
+
+.main-header {
+    max-width: 1140px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .main-header {
+        width: 96%;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        flex-wrap: wrap;
+    }
+}
+
+.main-header .header_left {
+    width: 30%;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_left {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.main-header .header_left span {
+    font-size: 80px;
+    color: #d23d29;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .main-header .header_left span {
+        font-size: 72px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_left span {
+        font-size: 80px;
+    }
+}
+
+.main-header .header_right {
+    width: 50%;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_right {
+        width: 100%;
+    }
+}
+
+.main-header .header_right .header_c {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_right .header_c {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+.main-header .header_right .header_c .login {
+    background: #b13120;
+    color: #fff;
+    width: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.main-header .header_right .header_c .login:hover {
+    background: #b93625;
+}
+
+.main-header .header_right .header_c .login a {
+    margin: 0px 8px;
+    color: #fff;
+}
+
+.main-header .header_right .header_c .login a span {
+    padding-right: 3px;
+}
+
+.main-header .header_right .header_c .fb_icon {
+    background: #3B5998;
+    color: #fff;
+    width: 146px;
+    height: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.main-header .header_right .header_c .logout {
+    background: #acacac;
+    color: #fafafa;
+    width: 72px;
+    height: 32px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.main-header .header_right .header_c .fb_icon a {
+    color: #fff;
+}
+
+.main-header .header_right .header_c .fb_icon:hover {
+    background: #00508d;
+}
+
+.main-header .header_right .search {
+    width: 480px;
+    height: 32px;
+    float: right;
+    border: 1px solid #acacac;
+    background: #fff;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .main-header .header_right .search {
+        width: 380px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_right .search {
+        width: 100%;
+    }
+}
+
+.main-header .header_right .search .formBox {
+    border: none;
+    height: 32px;
+    position: relative;
+}
+
+.main-header .header_right .search .formBox .search_in {
+    width: 390px;
+    height: 16px;
+    border: none;
+    background: none;
+    padding: 8px;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .main-header .header_right .search .formBox .search_in {
+        width: 300px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_right .search .formBox .search_in {
+        width: 74%;
+    }
+}
+
+.main-header .header_right .search .formBox .search_b {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: #8b8b8b;
+    width: 71px;
+    height: 32px;
+    padding: 0px 12px;
+    color: #fff;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    font-size: 14px;
+}
+
+.main-header .header_right .search .formBox .search_b:hover {
+    background: #b93625;
+}
+
+.m_nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #b13120;
+    z-index: 100;
+}
+
+.m_nav .menu {
+    position: relative;
+    max-width: 1140px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .m_nav .menu {
+        justify-content: center;
+    }
+}
+
+.m_nav .menu li {
+    position: relative;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.m_nav .menu li:after {
+    position: absolute;
+    background: #a12717;
+    height: 20px;
+    width: 1px;
+    content: "";
+    top: 12px;
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .m_nav .menu li:after {
+        display: none;
+    }
+}
+
+.m_nav .menu li:hover:after {
+    background: none;
+}
+
+.m_nav .menu li a {
+    font-size: 18px;
+    padding: 0px 15px;
+    height: 42px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (min-width: 0px) and (max-width:560px) {
+    .m_nav .menu li a {
+        font-size: 14px;
+        padding: 0px 6px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:320px) {
+    .m_nav .menu li a {
+        font-size: 0.8rem;
+        padding: 0px 6px;
+    }
+}
+
+.m_nav .menu li a:hover {
+    color: #fff;
+    background: #b93625;
+}
+
+.uiGrid _51mz {
+    width: 280px !important;
+}
+
+.navfix {
+    position: fixed !important;
+    top: 0px !important;
+    background: #b93625;
+    color: #fff;
+    display: flex;
+}
+
+.navfix .menu li a {
+    color: #fff;
+}
+
+.navfix .menu .logo {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 14px;
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .navfix .menu .logo {
+        display: none;
+    }
+}
+
+/* 會員登入 */
+.loginBox {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+.loginBox .box01 {
+    max-width: 1140px;
+    margin: 20px auto 30px auto;
+}
+
+.loginBox .box01 .b_title {
+    text-align: center;
+}
+
+.loginBox .box01 .b_title h3 {
+    width: 400px;
+    display: inline-block;
+    border-bottom: #b13120 solid 1px;
+    margin-bottom: 25px;
+}
+
+.loginBox .box01 .b_title em {
+    border-bottom: #b13120 solid 2px;
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b13120;
+}
+
+.loginBox .box01 .loginform {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.loginBox .box01 .loginform .input_content {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.loginBox .box01 .loginform .input_content input {
+    width: 280px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+.loginBox .box01 .loginform .input_content {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.loginBox .box01 .loginform .input_content .title {
+    width: 80px;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.loginBox .box01 .loginform .input_content .title b {
+    font-weight: bold;
+    color: #b93625;
+}
+
+.loginBox .box01 .loginform .input_content input,
+.loginBox .box01 .loginform .input_content .input {
+    width: 315px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loginBox .box01 .loginform .input_content .input input {
+    width: auto;
+    height: auto;
+    padding-left: 0px;
+    border: none;
+}
+
+.loginBox .box01 .loginform .input_content .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox .box01 .loginform .input_content .pic img {
+    display: inline-block;
+    height: 28px;
+    margin-right: 3px;
+}
+
+.loginBox .box01 .loginform .input_content .pic a img.refresh {
+    display: inline-block;
+    height: 20px;
+    margin: 0px 3px;
+}
+
+.loginBox .box01 .loginform .f_member_remember {
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 85px;
+}
+
+.loginBox .box01 .loginform .button {
+    width: 315px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b13220;
+    margin: 10px 0px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    margin-left: 85px;
+}
+
+.loginBox .box01 .loginform .button:hover {
+    background: #b93625;
+}
+
+.loginBox .box01 .loginform .button a {
+    color: #fff;
+}
+
+.loginBox .box01 .loginform .another {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.loginBox .box01 .loginform .another a {
+    color: #d23d29;
+    margin: 0px 2px;
+}
+
+.loginBox .box01 .loginform .another .fb-login-button {
+    margin-left: 4px;
+}
+
+/* 忘記密碼 */
+.forgetBox {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+.forgetBox .box01 {
+    max-width: 1140px;
+    margin: 20px auto 30px auto;
+}
+
+.forgetBox .box01 .b_title {
+    text-align: center;
+}
+
+.forgetBox .box01 .b_title h3 {
+    width: 300px;
+    display: inline-block;
+    border-bottom: #b13120 solid 1px;
+    margin-bottom: 25px;
+}
+
+.forgetBox .box01 .b_title em {
+    border-bottom: #b13120 solid 2px;
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b13120;
+}
+
+.forgetBox .box01 .loginform {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.forgetBox .box01 .loginform .input_content {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.forgetBox .box01 .loginform .input_content input {
+    width: 280px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+.forgetBox .box01 .loginform .input_content span {
+    background: #b13120;
+    color: #fff;
+    width: 124px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.forgetBox .box01 .loginform .f_member_remember {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.forgetBox .box01 .loginform .button {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b13220;
+    margin: 10px 0px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.forgetBox .box01 .loginform .button:hover {
+    background: #b93625;
+}
+
+.forgetBox .box01 .loginform .button a {
+    color: #fff;
+}
+
+.forgetBox .box01 .loginform .another {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* 新會員註冊 */
+.signupBox {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+.signupBox .box01 {
+    max-width: 1140px;
+    margin: 20px auto 100px auto;
+}
+
+.signupBox .box01 .b_title {
+    text-align: center;
+}
+
+.signupBox .box01 .b_title h3 {
+    width: 400px;
+    display: inline-block;
+    border-bottom: #b13120 solid 1px;
+    margin-bottom: 25px;
+}
+
+.signupBox .box01 .b_title em {
+    border-bottom: #b13120 solid 2px;
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b13120;
+}
+
+.signupBox .box01 .photoupload {
+    width: 400px;
+    padding-left: 170px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.signupBox .box01 .photoupload .photo {
+    background: #d3d3d3;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupBox .box01 .photoupload .photo span {
+    font-size: 60px;
+    color: #9a9a9a;
+}
+
+.signupBox .box01 .photoupload .btn {
+    width: 180px;
+    height: 32px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.signupBox .box01 .photoupload .btn:hover {
+    background: #ccc;
+}
+
+.signupBox .box01 .photoupload .btn a {
+    color: #333;
+}
+
+.signupBox .box01 .loginform {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.signupBox .box01 .loginform a {
+    color: #b13120;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.signupBox .box01 .loginform p {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.signupBox .box01 .loginform p span {
+    color: #b13120;
+    font-weight: bold;
+}
+
+.signupBox .box01 .loginform .input_content {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.signupBox .box01 .loginform .input_content2 {
+    border: none;
+    margin-top: -1px;
+}
+
+.signupBox .box01 .loginform .input_content .title {
+    width: 80px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.signupBox .box01 .loginform .input_content .title b {
+    color: #b93625;
+    font-weight: bold;
+}
+
+.signupBox .box01 .loginform .input_content input {
+    width: 320px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(218, 218, 218);
+
+}
+
+.signupBox .box01 .loginform .input_content .input {
+    width: 320px;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.signupBox .box01 .loginform .input_content .input input {
+    width: auto;
+    height: auto;
+    padding-left: 0px;
+    border: none;
+}
+
+
+.signupBox .box01 .loginform .input_content img {
+    display: inline-block;
+    height: 28px;
+    margin-right: 3px;
+}
+
+.signupBox .box01 .loginform .input_content2 div span {
+    background: #5A5A5A;
+    color: #fff;
+    width: 314px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.signupBox .box01 .loginform .f_member_remember {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 83px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signupBox .box01 .loginform .button {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b13220;
+    margin: 10px 0px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    margin-left: 83px;
+    cursor: pointer;
+}
+
+.signupBox .box01 .loginform .button:hover {
+    background: #b93625;
+}
+
+.signupBox .box01 .loginform .button a {
+    color: #fff;
+}
+
+.signupBox .box01 .loginform .another {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.signupBox .box01 .loginform .input_content .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupBox .box01 .loginform .input_content .pic a img.refresh {
+    display: inline-block;
+    height: 20px;
+    margin: 0px 3px;
+}
+
+/* 使用條款 */
+.rulesBox {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+}
+
+.rulesBox .box01 {
+    max-width: 1140px;
+    margin: 20px auto 100px auto;
+}
+
+.rulesBox .box01 .b_title {
+    text-align: center;
+}
+
+.rulesBox .box01 .b_title h3 {
+    width: 400px;
+    display: inline-block;
+    border-bottom: #b13120 solid 1px;
+    margin-bottom: 25px;
+}
+
+.rulesBox .box01 .b_title em {
+    border-bottom: #b13120 solid 2px;
+    display: inline-block;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b13120;
+}
+
+.rulesBox .box01 .b_dit2 {
+    border: #eeeeee solid 10px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 2;
+    color: #362e2b;
+    word-break: normal;
+}
+
+.rulesBox .box01 .b_dit2 ul {
+    padding-left: 20px;
+}
+
+.rulesBox .box01 .b_dit2 ul li {
+    list-style: cjk-ideographic;
+}
+
+.rulesBox .box01 .b_dit2 ul li ol {
+    padding-left: 20px;
+}
+
+.rulesBox .box01 .b_dit2 ul li ol li {
+    list-style: decimal;
+}
+
+
+.black_Zone {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.black_Zone .Area {
+    width: 480px;
+    height: auto;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 300px;
+    background: #fff;
+}
+
+.black_Zone .Area .btn {
+    background: #888;
+    width: 30%;
+    height: 36px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+
+.black_Zone .Area .btn a {
+    color: #fff;
+}
+
+.black_Zone .Area .btn:hover {
+    background: #999;
+}
+
+.black_Zone .Area .loginform {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.black_Zone .Area .btn {
+    background: #B1311E;
+    width: 30%;
+    height: 36px;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff
+}
+
+.black_Zone .Area .btn a {
+    color: #fff;
+}
+
+.black_Zone .Area .btn:hover {
+    background: #d23d29;
+}
+
+.black_Zone .Area .loginform .txtL {
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.8;
+}

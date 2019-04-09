@@ -1,0 +1,373 @@
+/* 內頁 原創發表 */
+
+select::-ms-expand {
+    display: none;
+}
+
+.bg-grey {
+    width: 100%;
+    background: #fafafa !important;
+    padding-top: 20px;
+}
+
+.PDtop {
+    padding-top: 20px;
+}
+
+@media all and (min-width: 0px) and (max-width:1024px) {
+    .bg-grey {
+        display: none;
+    }
+}
+
+.originalBox {
+    position: relative;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    overflow-x: hidden;
+}
+
+@media all and (min-width: 641px) and (max-width:1140px) {
+    .originalBox {
+        position: relative;
+        width: 90%;
+        margin: 20px auto 0px auto;
+    }
+
+    .originalBox .titleBox .container {
+        max-width: 100%;
+        margin: 20px auto 30px auto;
+    }
+}
+
+.originalBox .titleBox {
+    width: 100%;
+    background: #fff;
+}
+
+.originalBox .titleBox .container {
+    max-width: 1140px;
+    margin: 20px auto 30px auto;
+}
+
+@media all and (min-width: 0px) and (max-width:1140px) {
+    .originalBox .titleBox .container {
+        width: 100%;
+        margin: 20px auto 30px auto;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+    .originalBox {
+        position: relative;
+        width: 96%;
+        margin: 40px auto 0px auto;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+    .originalBox {
+        position: relative;
+        width: 96%;
+        margin: 40px auto 0px auto;
+    }
+}
+
+.originalBox .titleBox .container h2 {
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #d23d29;
+}
+
+.originalBox .titleBox .container h2::after {
+    border-bottom: 3px solid #d23d29;
+    bottom: -1px;
+    content: ".";
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 72px;
+    left: 0;
+}
+
+.originalBox .titleBox .container h2 a {
+    color: #b13120;
+}
+
+.originalBox .titleBox .container h2 a:hover {
+    color: #b93625;
+}
+
+.originalBox .videoBox {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+    .originalBox .videoBox {
+        padding-bottom: 100px;
+    }
+}
+
+.originalBox .videoBox .container {
+    max-width: 1140px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.originalBox .videoBox .container .org_list {
+    width: 24.1%;
+    margin-right: 1.2%;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .originalBox .videoBox .container .org_list {
+        width: 32.5%;
+        margin-right: 1.2%;
+        margin-bottom: 20px;
+    }
+}
+
+.originalBox .videoBox .container .w50 {
+    width: 48.8%;
+    margin-right: 2.4%;
+    margin-bottom: 20px;
+}
+
+.originalBox .videoBox .container .w50:nth-child(2n) {
+    margin-right: 0%;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .originalBox .videoBox .container .w50 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+
+    .originalBox .videoBox .container .org_list,
+    .originalBox .videoBox .container .w50 {
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+}
+
+.originalBox .videoBox .container .org_list:nth-child(4n) {
+    margin-right: 0%;
+}
+
+@media all and (min-width: 641px) and (max-width:1024px) {
+    .originalBox .videoBox .container .org_list:nth-child(3n) {
+        margin-right: 0%;
+    }
+
+    .originalBox .videoBox .container .org_list:nth-child(4n) {
+        margin-right: 1.2%;
+    }
+
+    .originalBox .videoBox .container .w50:nth-child(4n) {
+        margin-right: 0%;
+    }
+
+    .originalBox .videoBox .container .w50:nth-child(3n) {
+        margin-right: 2.4%;
+    }
+
+    .originalBox .videoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+    .originalBox .videoBox .container .org_list:nth-child(3n) {
+        margin-right: 1.2%;
+    }
+
+    .originalBox .videoBox .container .org_list:nth-child(4n) {
+        margin-right: 1.2%;
+    }
+
+    .originalBox .videoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:480px) {
+    .originalBox .videoBox .container .org_list .b_video iframe {
+        height: 220px !important;
+    }
+
+    .originalBox .videoBox .container .w50 .b_video iframe {
+        height: 220px !important;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+    .originalBox .videoBox .container .org_list {
+        width: 49%;
+        margin-right: 1.5%;
+        margin-bottom: 20px;
+    }
+
+    .originalBox .videoBox .container .org_list:nth-child(2n),
+    .originalBox .videoBox .container .org_list:nth-child(4n) {
+        margin-right: 0%;
+    }
+}
+
+.originalBox .videoBox .container .org_list .b_txt {
+    font-size: 13px;
+    color: #606060;
+    cursor: pointer;
+}
+
+.originalBox .videoBox .container .org_list .b_txt h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #484848;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin: 4px 0px;
+    cursor: pointer;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+.originalBox .videoBox .container .org_list .b_txt h3:hover {
+    color: #000;
+}
+
+.originalBox .videoBox .container .org_list .b_info {
+    font-size: 12px;
+    color: #aaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0px;
+}
+
+.originalBox .videoBox .moreBox {
+    width: 100%;
+}
+
+.originalBox .videoBox .moreBox .moreBtn {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.originalBox .videoBox .moreBox .moreBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    background: #b13120;
+    color: #fff;
+    border: 1px solid #b13120;
+}
+
+.originalBox .videoBox .moreBox .moreBtn a span {
+    padding-right: 6px;
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .originalBox .videoBox .moreBox .moreBtn a {
+        width: 100%;
+    }
+}
+
+.originalBox .videoBox .moreBox .moreBtn a:hover {
+    color: #b13120;
+    background: none;
+}
+
+.originalBox .videoBox .box_c {
+    max-width: 1140px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media all and (min-width: 0px) and (max-width:414px) {
+    .originalBox .videoBox .box_c .t_main {
+        margin-bottom: 20px;
+    }
+}
+
+.originalBox .videoBox .box_c a {
+    color: #fff;
+    background: #b13120;
+    width: 90px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.originalBox .videoBox .box_c .searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.originalBox .videoBox .box_c .searchBox .searchselect span {
+    font-size: 24px;
+    color: #666;
+    margin-right: 4px;
+}
+
+.originalBox .videoBox .box_c .searchBox .searchselect .b_select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #f2f2f2;
+    color: #333;
+    width: 160px;
+    height: 36px;
+    border: none;
+    border-radius: 0px;
+    padding-left: 10px;
+    margin-right: 8px;
+    background: url(../images/search_bg.png) no-repeat;
+}
+
+.originalBox .videoBox .box_c .searchBox .music_s {
+    width: 72px;
+    height: 36px;
+    background: #8b8b8b;
+    color: #fff;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.originalBox .videoBox .box_c .searchBox .music_s:hover {
+    background: #b93625;
+}

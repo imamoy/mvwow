@@ -1,0 +1,67 @@
+.mainfoot {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    background: #b13120;
+}
+
+.mainfoot .container {
+    width: 1140px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+@media all and (min-width: 641px) and (max-width:1140px) {
+    .mainfoot .container {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .mainfoot .container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.mainfoot .container .footLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.mainfoot .container .footLink .foot_x {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mainfoot .container .footLink .foot_x a {
+    color: #fff;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+.mainfoot .container .footLink .foot_x a:hover {
+    color: rgb(255, 200, 200);
+}
+
+@media all and (min-width: 0px) and (max-width:640px) {
+    .mainfoot .container .footLink {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+
+    .mainfoot .container .footLink .foot_x {
+        width: 100%;
+        margin: 10px 0px 5px 0px;
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/member.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVWOW-會員中心</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="main-header">
+            <!-- logo start -->
+            <div class="header_left">
+                <a href="index.html">
+                    <span class="icon-logo"></span>
+                </a>
+            </div>
+            <!-- logo end -->
+            <div class="header_right">
+                <div class="header_c">
+                    <!-- <div class="login">
+                        <a href="login.html">登入</a>|
+                        <a href="signup.html">註冊</a>
+                    </div>
+                    <div class="fb_icon">
+                        <a href="">Facebook 註冊登入</a>
+                    </div> -->
+                    <div class="login">
+                        <a>
+                            <span class="icon-user"></span>admin12344</a>|
+                        <a href="memberCenter.html">會員中心</a>
+                    </div>
+                    <div class="logout">
+                        <a>登出</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                        <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
+                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- menu start -->
+    <div class="m_nav">
+        <ul class="menu">
+            <a class="logo hide" href="index.html">
+                MVWOW
+            </a>
+            <li>
+                <a href="original.html">原創發表</a>
+            </li>
+            <li>
+                <a href="master.html">一般發表</a>
+            </li>
+            <li>
+                <a href="publish.html">我要發表</a>
+            </li>
+            <li>
+                <a href="collection.html">我的收藏</a>
+            </li>
+            <li>
+                <a href="track.html">我的追蹤</a>
+            </li>
+        </ul>
+    </div>
+    <!-- menu end -->
+    <!-- login start -->
+    <div class="memberBox">
+        <div class="box01">
+            <div class="b_title">
+                <h3>
+                    <a href="login.html">
+                        <em>會員中心</em>
+                    </a>
+                </h3>
+            </div>
+
+            <div class="container">
+                <div class="page_left">
+                    <ul>
+                        <li class="active">
+                            <span class="icon-play2"></span>
+                            <a href="memberCenter.html">基本資料</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="publish.html">我要發表</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="track.html">我的追蹤</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="collection.html">我的收藏</a>
+                        </li>
+                        <li>
+                            <span class="icon-play2"></span>
+                            <a href="admin_publish.html">發表管理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_main">
+                    <div class="photoupload">
+                        <div class="photo">
+                            <span class="icon-profile"></span>
+                        </div>
+                        <div class="btn">
+                            <a href="">上傳頭像</a>
+                        </div>
+                    </div>
+                    <div class="loginform">
+                        <div class="input_content">
+                            <div class="title">帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號</div>
+                            <input type="text" placeholder="acoount">
+                        </div>
+                        <!-- <div class="input_content">
+                            <div class="title">修改密碼</div>
+                            <input type="text" placeholder="************">
+                            <span class="edit">修改</span>
+                        </div> -->
+                        <div class="input_content">
+                            <div class="title"><b>*</b>別&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</div>
+                            <input type="text" placeholder="別名">
+                        </div>
+                        <div class="input_content">
+                            <div class="title"><b>*</b>email</div>
+                            <input type="text" value="sa800104@gmail.com" disabled />
+                            <span class="change changemailbtn">變更</span>
+                        </div>
+                        <div class="input_content">
+                            <div class="title">行動電話</div>
+                            <input type="text" value="0972*******" disabled />
+                            <span class="sendcode sendcodebtn">新增或變更</span>
+                        </div>
+                        <div class="hinttxt">原創發表請認證，其餘選填</div>
+                        <div class="input_content">
+                            <div class="title MT">自我介紹</div>
+                            <textarea placeholder="建議撰寫50～200字內的自我介紹（上限500字）" maxlength="200"></textarea>
+                        </div>
+                        <div class="input_content m20">
+                            <div class="title">&emsp;&emsp;&emsp;&emsp;</div>
+                            <div class="button">
+                                <a href="">上傳修改</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- login end -->
+    <!-- foot start -->
+    <div class="mainfoot">
+        <div class="container">
+            <div class="footLink">
+                <div class="foot_x">
+                    <a href="about.html">關於我們</a>
+                    <a href="rules.html">使用條款</a>
+                    <a href="privacy.html">隱私權政策</a>
+                </div>
+                <div class="foot_x">
+                    <a href="suggest.html">指正建議</a>
+                    <a href="complaint.html">檢舉投訴</a>
+                    <a href="cooperation.html">廣告及合作</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot end -->
+
+    <!-- popup phone Start -->
+    <div class="black_Zone black_Zone1 hide">
+        <div class="Area">
+            <div class="loginform">
+                <div class="input_content">
+                    <div class="title">新行動電話</div>
+                    <input type="text" placeholder="e.g.0900123456">
+                    <span class="sendcode">申請手機驗證碼</span>
+                    <!-- 倒數按鈕 -->
+                    <span class="sendcode down hide">倒數30s</span>
+                </div>
+                <div class="input_content">
+                    <div class="title"><b>*</b>手機驗證碼</div>
+                    <input type="text" placeholder="密碼將於100秒後失效">
+                    <span class="confirm gofinishphone">確認</span>
+                </div>
+            </div>
+            <div class="btn close"><a href="">取消</a></div>
+        </div>
+    </div>
+    <!-- popup phone End -->
+
+    <!-- popup finish Start -->
+    <div class="black_Zone black_Zone2 hide">
+        <div class="Area">
+            <div class="loginform">
+                <div class="txt">新行動電話變更完成</div>
+            </div>
+            <div class="btn redbtn close"><a href="">確認</a></div>
+        </div>
+    </div>
+    <!-- popup finish End -->
+
+    <!-- popup mail Start -->
+    <div class="black_Zone black_Zone3 hide">
+        <div class="Area">
+            <div class="loginform">
+                <div class="input_content">
+                    <div class="title">新Email</div>
+                    <input type="text" placeholder="">
+                    <span class="confirm gofinishmail">確認</span>
+                </div>
+            </div>
+            <div class="btn close"><a href="">取消</a></div>
+        </div>
+    </div>
+    <!-- popup mail End -->
+
+    <!-- popup mail Start -->
+    <div class="black_Zone black_Zone4 hide">
+        <div class="Area">
+            <div class="loginform">
+                <div class="txt">變更完成，請至新email信箱收信啟用。</div>
+            </div>
+            <div class="btn redbtn close"><a href="">關閉</a></div>
+        </div>
+    </div>
+    <!-- popup mail End -->
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
+</html>
