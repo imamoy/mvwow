@@ -370,6 +370,7 @@
     font-weight: bold;
     color: #484848;
     max-height: 3.2rem;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;

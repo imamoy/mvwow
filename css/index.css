@@ -17,6 +17,12 @@
     background-image: url(../images/jordan-mixson-372435-unsplash.jpg);
 }
 
+@media screen and (max-width:640px) {
+    .banner {
+        margin: 0 auto;
+    }
+}
+
 /* 首頁 原創發表 */
 
 .originalBox {

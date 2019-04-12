@@ -387,7 +387,7 @@ select::-ms-expand {
     width: 95px;
     padding-right: 15px;
     text-align: right;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2;
     position: relative;
 }
@@ -949,6 +949,7 @@ select::-ms-expand {
     font-weight: bold;
     color: #484848;
     max-height: 3.2rem;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;

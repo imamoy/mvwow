@@ -151,6 +151,9 @@ header {
 }
 
 @media all and (min-width: 0px) and (max-width:640px) {
+    header {
+        overflow: hidden;
+    }
     .main-header {
         width: 90%;
         height: auto;
@@ -166,7 +169,6 @@ header {
 @media all and (min-width: 0px) and (max-width:640px) {
     .main-header .header_left {
         width: 100%;
-        margin: 0px 0px 20px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -187,6 +189,22 @@ header {
 @media all and (min-width: 0px) and (max-width:640px) {
     .main-header .header_left span {
         font-size: 80px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .main-header .header_left span {
+        display: inline-block;
+        width: 60vw;
+        height: 40px;
+        margin-left: 5px;
+        background-image: url(../images/logo-m.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .main-header .header_left .icon-logo:before {
+        display: none;
     }
 }
 
@@ -279,11 +297,51 @@ header {
 }
 
 .main-header .header_right .search {
-    width: 480px;
+    /* width: 480px; */
     height: 32px;
     float: right;
-    border: 1px solid #acacac;
+    /* border: 1px solid #acacac; */
     background: #fff;
+}
+
+.main-header .header_right .search .b_select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    color: #333;
+    width: 140px;
+    height: 34px;
+    border: 1px solid #acacac;
+    border-right: none;
+    border-radius: 0px;
+    padding-left: 10px;
+    margin-left: 8px;
+}
+
+.main-header .header_right .search .searchselect {
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.main-header .header_right .search .searchselect::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #787878 transparent transparent transparent;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: -1;
+}
+@media screen and (min-width:641px) {
+    .main-header .header_right .search-toggle {
+        display: none;
+    }
 }
 
 @media all and (min-width: 641px) and (max-width:1024px) {
@@ -293,21 +351,33 @@ header {
 }
 
 @media all and (min-width: 0px) and (max-width:640px) {
+    .main-header .header_right .search-toggle{
+        display: block;
+        font-size: 22px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: 1px;
+        transform: translateY(-50%);
+    }
     .main-header .header_right .search {
         width: 100%;
     }
 }
 
 .main-header .header_right .search .formBox {
+    display: flex;
+    align-items: center;
     border: none;
     height: 32px;
     position: relative;
 }
 
 .main-header .header_right .search .formBox .search_in {
-    width: 390px;
+    width: auto;
     height: 16px;
-    border: none;
+    /* border: none; */
+    border: 1px solid #acacac;
     background: none;
     padding: 8px;
 }
@@ -317,20 +387,20 @@ header {
         width: 300px;
     }
 }
-
-@media all and (min-width: 0px) and (max-width:640px) {
-    .main-header .header_right .search .formBox .search_in {
-        width: 74%;
+@media screen and (max-width: 640px) { 
+    .main-header .header_right .header_c,
+    .main-header .header_right .search {
+        display: none;
     }
 }
 
 .main-header .header_right .search .formBox .search_b {
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    /* right: 0; */
     border: none;
     background: #8b8b8b;
     width: 71px;
-    height: 32px;
+    height: 34px;
     padding: 0px 12px;
     color: #fff;
     -webkit-transition: .2s ease-out;
@@ -342,14 +412,85 @@ header {
     background: #b93625;
 }
 
-.m_nav {
+/* 漢堡選單 開始 */
+header .menu-toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+header .menu-toggle .hamburger {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+header .menu-toggle .hamburger::before,
+header .menu-toggle .hamburger::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+}
+
+header .menu-toggle .hamburger::before {
+    top: -8px;
+}
+
+header .menu-toggle .hamburger::after {
+    bottom: -8px;
+}
+
+header .menu-toggle.active .hamburger {
+    width: 0;
+}
+
+header .menu-toggle.active .hamburger::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+header .menu-toggle.active .hamburger::after {
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 640px) {
+    header .menu-toggle {
+        display: block;
+    }
+}
+/* 漢堡選單 結束 */
+
+/*子選單 開始*/
+header .menu  {
     width: 100%;
     margin: 0 auto;
     background: #b13120;
     z-index: 100;
 }
 
-.m_nav .menu {
+header .menu > ul {
     position: relative;
     max-width: 1140px;
     height: 42px;
@@ -359,13 +500,7 @@ header {
     justify-content: flex-start;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
-    .m_nav .menu {
-        justify-content: center;
-    }
-}
-
-.m_nav .menu li {
+header .menu > ul li {
     position: relative;
     height: 42px;
     display: flex;
@@ -374,7 +509,7 @@ header {
     transition: .2s ease-out;
 }
 
-.m_nav .menu li:after {
+header .menu > ul li:after {
     position: absolute;
     background: #a12717;
     height: 20px;
@@ -383,17 +518,11 @@ header {
     top: 12px;
 }
 
-@media all and (min-width: 0px) and (max-width:414px) {
-    .m_nav .menu li:after {
-        display: none;
-    }
-}
-
-.m_nav .menu li:hover:after {
+header .menu > ul li:hover:after {
     background: none;
 }
 
-.m_nav .menu li a {
+header .menu > ul a {
     font-size: 18px;
     padding: 0px 15px;
     height: 42px;
@@ -404,24 +533,41 @@ header {
     justify-content: center;
 }
 
-@media all and (min-width: 0px) and (max-width:560px) {
-    .m_nav .menu li a {
-        font-size: 14px;
-        padding: 0px 6px;
-    }
-}
-
-@media all and (min-width: 0px) and (max-width:320px) {
-    .m_nav .menu li a {
-        font-size: 0.8rem;
-        padding: 0px 6px;
-    }
-}
-
-.m_nav .menu li a:hover {
+header .menu > ul li a:hover {
     color: #fff;
     background: #b93625;
 }
+
+    /*sub - nav*/
+header .menu .sub-nav {
+    display: none;
+}
+
+@media screen and (min-width: 641px) {
+    header .menu > ul .sub-toggle {
+        position: relative;
+    }
+    
+    header .menu .sub-toggle:hover .sub-nav {
+        display: block;
+        background-color: #8b8b8b;
+        position: absolute;
+        top: 100%;
+    }
+
+    header .menu .header_c {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    header .menu {
+        display: none;
+    }
+}
+
+/* 子選單 結束*/
+
+
 
 .uiGrid _51mz {
     width: 280px !important;
