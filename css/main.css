@@ -130,6 +130,10 @@ header {
     width: 100%;
     border-top: 4px solid #d23d29;
 }
+button,input[type="submit"],input[type="button"] {
+    border-radius: 0;
+    background-image: none;
+}
 
 .mt30 {
     margin-top: 30px!important;
@@ -197,6 +201,12 @@ header {
 }
 
 @media screen and (max-width:640px) {
+    .main-header.active {
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 99;
+    }
     .main-header .header_left span {
         display: inline-block;
         width: 60vw;
@@ -1612,4 +1622,10 @@ header .menu .sub-nav {
 }
 .news .b_dit2 {
     text-align: left;
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .b_video iframe, .masterBox .b_video iframe {
+        height: 220px !important;
+    }
 }

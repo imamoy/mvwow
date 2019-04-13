@@ -215,21 +215,38 @@ select::-ms-expand {
     right: 6px;
     top: 5px;
 }
+.memberBox .box01 .container .page_main .loginform .input_content .searchselect {
+    background-color: #FFF;
+    position: relative;
+    z-index: 1;
+}
+.memberBox .box01 .container .page_main .loginform .input_content .searchselect::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #787878 transparent transparent transparent;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: -1;
+}
 
 .memberBox .box01 .container .page_main .loginform .input_content .b_select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
-    background: #f2f2f2;
+    background: transparent;
     color: #333;
-    width: 280px;
+    width: 100%;
     height: 36px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 0px;
     padding-left: 10px;
     margin-right: 8px;
-    background: url(../images/search_bg.png) no-repeat;
     font-size: 14px;
 }
 
@@ -384,12 +401,13 @@ select::-ms-expand {
 }
 
 .memberBox .box01 .container .page_main .loginform .input_content .title {
-    width: 95px;
+    min-width: 73px;
     padding-right: 15px;
     text-align: right;
     font-size: 14px;
     line-height: 2;
     position: relative;
+    box-sizing: border-box;
 }
 
 .memberBox .box01 .container .page_main .loginform .input_content .MT {
