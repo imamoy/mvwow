@@ -13,17 +13,87 @@
 </head>
 
 <body>
-   <!-- header start -->
-   <header>
-    <div class="main-header">
-        <!-- logo start -->
-        <div class="header_left">
-            <a href="index.html">
-                <span class="icon-logo"></span>
-            </a>
+    <!-- header start -->
+    <header>
+        <div class="main-header">
+            <!-- logo start -->
+            <div class="header_left">
+                <a href="index.html">
+                    <span class="icon-logo"></span>
+                </a>
+            </div>
+            <!-- logo end -->
+            <div class="header_right">
+                <div class="header_c">
+                    <div class="login">
+                        <a href="login.html">登入</a>|
+                        <a href="signup.html">註冊</a>
+                    </div>
+                    <div class="fb_icon">
+                        <a href="">Facebook 註冊登入</a>
+                    </div>
+                </div>
+                <span class="search-toggle"><i class="icon-search"></i></span>
+                <div class="search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                        <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
+                        <div class="searchselect">
+                            <select class="b_select" name="search-type">
+                                <option value="">會員編號、別名</option>
+                                <option value="">影片標題</option>
+                                <option value="">影片介紹</option>
+                                <option value="">會員介紹</option>
+                            </select>
+                        </div>
+                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- logo end -->
-        <div class="header_right">
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <!-- menu start -->
+        <div class="menu">
+            <div class="member-bar"><i class="icon-user"></i>admin12345</div>
+            <ul>
+                <li class="pc_hide"><a href="" title="首頁"><i class="icon-home3"></i>首&emsp;&emsp;頁</a></li>
+                <li class="sub-toggle">
+                    <span><i class="icon-fire"></i>原創發表</span>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="original-good.html" title="最受好評">最受好評</a></li>
+                            <li><a href="original-new.html" title="最新發表">最新發表</a></li>
+                            <li><a href="original-more.html" title="最多點閱">最多點閱</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sub-toggle">
+                    <span><i class="icon-pencil"></i>一般發表</span>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="master-good.html" title="最受好評">最受好評</a></li>
+                            <li><a href="master-new.html" title="最新發表">最新發表</a></li>
+                            <li><a href="master-more.html" title="最多點閱">最多點閱</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sub-toggle">
+                    <span><i class="icon-users"></i>會員專區</span>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="memberCenter.html" title="基本資料">基本資料</a></li>
+                            <li><a href="publish.html" title="我要發表">我要發表</a></li>
+                            <li><a href="track.html" title="我的追蹤">我的追蹤</a></li>
+                            <li><a href="collection.html" title="我的收藏">我的收藏</a></li>
+                            <li><a href="admin_publish.html" title="發表管理">發表管理</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="phone_hide">
+                    <a href="publish.html" title="優惠活動">優惠活動</a>
+                </li>
+            </ul>
             <div class="header_c">
                 <div class="login">
                     <a href="login.html">登入</a>|
@@ -32,95 +102,25 @@
                 <div class="fb_icon">
                     <a href="">Facebook 註冊登入</a>
                 </div>
-            </div>
-            <span class="search-toggle"><i class="icon-search"></i></span>
-            <div class="search">
-                <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
-                    <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
-                    <div class="searchselect">
-                        <select class="b_select" name="search-type">
-                            <option value="">會員編號、別名</option>
-                            <option value="">影片標題</option>
-                            <option value="">影片介紹</option>
-                            <option value="">會員介紹</option>
-                        </select>
-                    </div>
-                    <input type="submit" name="button" id="button" value="search" class="search_b" >
-                </form>
+                <div class="user-out"><i></i>會員登出</div>
             </div>
         </div>
-    </div>
-    <div class="menu-toggle">
-        <div class="hamburger"></div>
-    </div>
-    <!-- menu start -->
-    <div class="menu">
-        <div class="member-bar"><i class="icon-user"></i>admin12345</div>
-        <ul>
-            <li class="pc_hide"><a href="" title="首頁"><i class="icon-home3"></i>首&emsp;&emsp;頁</a></li>
-            <li class="sub-toggle">
-                <span><i class="icon-fire"></i>原創發表</span>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="original-good.html" title="最受好評">最受好評</a></li>
-                        <li><a href="original-new.html" title="最新發表">最新發表</a></li>
-                        <li><a href="original-more.html" title="最多點閱">最多點閱</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="sub-toggle"> 
-                <span><i class="icon-pencil"></i>一般發表</span>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="master-good.html" title="最受好評">最受好評</a></li>
-                        <li><a href="master-new.html" title="最新發表">最新發表</a></li>
-                        <li><a href="master-more.html" title="最多點閱">最多點閱</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="sub-toggle"> 
-                <span><i class="icon-users"></i>會員專區</span>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="memberCenter.html" title="基本資料">基本資料</a></li>
-                        <li><a href="publish.html" title="我要發表">我要發表</a></li>
-                        <li><a href="track.html" title="我的追蹤">我的追蹤</a></li>
-                        <li><a href="collection.html" title="我的收藏">我的收藏</a></li>
-                        <li><a href="admin_publish.html" title="發表管理">發表管理</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="phone_hide">
-                <a href="publish.html" title="優惠活動">優惠活動</a>
-            </li>
-        </ul>
-        <div class="header_c">
-            <div class="login">
-                <a href="login.html">登入</a>|
-                <a href="signup.html">註冊</a>
-            </div>
-            <div class="fb_icon">
-                <a href="">Facebook 註冊登入</a>
-            </div>
-            <div class="user-out"><i></i>會員登出</div>
-        </div>
-    </div>
-<!-- menu end -->
-</header>
-<!-- header end -->
+        <!-- menu end -->
+    </header>
+    <!-- header end -->
     <!-- login start -->
     <div class="rulesBox">
         <div class="box01">
             <div class="b_title">
                 <h3>
-                    <a href="rules.html">
-                        <em>隱私權政策</em>
+                    <a href="about.html">
+                        <em>關於我們</em>
                     </a>
                 </h3>
             </div>
             <div class="b_dit2">
                 <ul class="use_p">
-                    MVWOW.com（以下簡稱本站或本公司）為音樂、表演相關服務之提供者，依循保護個人資料及隱私權之相關法令規定，制定隱私權政策如下。為了讓您瞭解MVWOW.com將如何蒐集、處理或利用您的個人資料，及有關您的隱私權保護之重要事項，請您詳細閱讀以下內容。
+                    MVWOW.com（以下簡稱本站或本公司）為音樂、表演相關服務之提供者，依循保護個人資料及隱私權之相關法令規定，制定隱私權政策如下。為了讓您瞭解MVWOW.com將如何蒐集、處理或利用您的個人資料，及有關您的隱私權保護之重要事項，請您詳細閱讀以下內容。
                     <p>
 
                     </p>
@@ -132,7 +132,8 @@
                         <ol>
                             <li>當您註冊成為MVWOW.com會員時，您需要輸入註冊帳號（電子郵件信箱）等資料。</li>
                             <li>當您是透過 FACEBOOK
-                                或其他網站（以下簡稱「第三方網站」）註冊成為MVWOW.com會員時，您同意MVWOW.com蒐集您的身分驗證資料以及在您的第三方網站帳號上可以看到或透過您的第三方網站帳號可以找到的其他資料，包括您的姓名、個人資料圖片、國家、電子郵件信箱、性別、出生日期、朋友的姓名及其個人資料圖片和交友網絡等。MVWOW.com可能需要驗證您的資料是否與該第三方網站上的資料一致。</li>
+                                或其他網站（以下簡稱「第三方網站」）註冊成為MVWOW.com會員時，您同意MVWOW.com蒐集您的身分驗證資料以及在您的第三方網站帳號上可以看到或透過您的第三方網站帳號可以找到的其他資料，包括您的姓名、個人資料圖片、國家、電子郵件信箱、性別、出生日期、朋友的姓名及其個人資料圖片和交友網絡等。MVWOW.com可能需要驗證您的資料是否與該第三方網站上的資料一致。
+                            </li>
                             <li>當您在使用MVWOW.com服務時，MVWOW.com將會蒐集到以下資料：
                                 <strong>(1) 您的使用資料，包括但不限於：使用歷史、查詢資料等；</strong>
                                 <strong>(2) 技術數據，例如：URL、IP 地址、瀏覽器類型、作業系統資料、語言及造訪時間、位置資料等，且MVWOW.com將使用 cookie
@@ -153,7 +154,8 @@
                                 <strong>(2) 您在MVWOW.com的使用資料及技術資料，將作為改進MVWOW.com服務或開發新服務用。</strong>
                                 <strong>(3) MVWOW.com提供電子報服務以及不定期寄發活動通知。若您不希望收到任何電子報或活動通知，可隨時登入帳戶取消訂閱或通知服務。</strong>
                             </li>
-                            <li>上述資料之處理與利用，可能由MVWOW.com之關係企業或其他合作廠商進行，MVWOW.com不會將上述資料用於上述規範外之其他用途。MVWOW.com亦不會未經會員事先同意而向第三者透露其個人資料，但因國家重大利益或為配合執法機關調查而根據法律需要透露者除外。</li>
+                            <li>上述資料之處理與利用，可能由MVWOW.com之關係企業或其他合作廠商進行，MVWOW.com不會將上述資料用於上述規範外之其他用途。MVWOW.com亦不會未經會員事先同意而向第三者透露其個人資料，但因國家重大利益或為配合執法機關調查而根據法律需要透露者除外。
+                            </li>
                             <li>個資告知事項：為確保您的權益，請您詳閱以下個人資料保護法告知事項：
                                 <strong>(1) 非公務機關：MVWOW.com及本公司。</strong>
                                 <strong>(2)
@@ -173,7 +175,8 @@
                                 <p>（四）方式：符合法令規定範圍之利用。
                                 </p>
                             </li>
-                            <li>您得行使個人資料保護法第三條規定之請求查詢或請求閱覽、製給複製本、補充或更正、停止蒐集、處理或利用、刪除等權利。若您申請查詢或請求閱覽或製給複製本，MVWOW.com得酌收相當費用，收費將依MVWOW.com規定辦理。</li>
+                            <li>您得行使個人資料保護法第三條規定之請求查詢或請求閱覽、製給複製本、補充或更正、停止蒐集、處理或利用、刪除等權利。若您申請查詢或請求閱覽或製給複製本，MVWOW.com得酌收相當費用，收費將依MVWOW.com規定辦理。
+                            </li>
                             <li>您得自由選擇提供資料（但依法令規定者不在此限），若提供不完整或不提供將影響服務之申辦。</li>
                         </ol>
                     </li>
@@ -199,7 +202,8 @@
                             <li>請妥善保管您的付費資訊(含信用卡資料)，避免遭他人為不法用途。</li>
                             <li>MVWOW.com服務可能包含其他非MVWOW.com網站或網頁連結，若您同意該網站蒐集、處理或利用您的個人資料，MVWOW.com不負任何連帶責任。</li>
                             <li>您同意在MVWOW.com服務進行之消費時所留存的資料與事實相符，如嗣後發現您的個人資料遭他人非法使用或有任何異常時，應即時通知MVWOW.com。</li>
-                            <li>您同意於使用MVWOW.com服務時，所提供及使用之資料皆為合法，並無侵害第三人權利、違反第三方協議或涉及任何違法行為。如因使用服務而致第三人損害，除MVWOW.com故意或重大過失外，MVWOW.com並不負擔相關賠償責任。</li>
+                            <li>您同意於使用MVWOW.com服務時，所提供及使用之資料皆為合法，並無侵害第三人權利、違反第三方協議或涉及任何違法行為。如因使用服務而致第三人損害，除MVWOW.com故意或重大過失外，MVWOW.com並不負擔相關賠償責任。
+                            </li>
                         </ol>
                     </li>
 
@@ -211,8 +215,10 @@
                         <ol>
                             <li>MVWOW.com將以合理之技術及程序，維護您個人資料之安全。在部分情況下MVWOW.com使用通行標準SSL（Secure Sockets
                                 Layer）機制，保障資料傳送的安全性，同時，MVWOW.com也採取適當的網路安全保護機制(如：防火牆等)，以確保您的資料受到嚴密保護。</li>
-                            <li>為保障您的隱私及安全，提醒您務必定期更新防毒軟體，並請妥善保管您的任何個人資料、代碼或密碼等。於使用完畢MVWOW.com服務後，請您務必登出或關閉軟體與瀏覽器視窗，避免您的資料遭到盜用。</li>
-                            <li>儘管MVWOW.com在保護您的個人資料安全上持續努力，但因網路科技之日益精進，網際網路資料的傳輸不能保證百分之百安全無虞；故MVWOW.com在此提醒您，請您瞭解、注意並承擔此部分之風險。</li>
+                            <li>為保障您的隱私及安全，提醒您務必定期更新防毒軟體，並請妥善保管您的任何個人資料、代碼或密碼等。於使用完畢MVWOW.com服務後，請您務必登出或關閉軟體與瀏覽器視窗，避免您的資料遭到盜用。
+                            </li>
+                            <li>儘管MVWOW.com在保護您的個人資料安全上持續努力，但因網路科技之日益精進，網際網路資料的傳輸不能保證百分之百安全無虞；故MVWOW.com在此提醒您，請您瞭解、注意並承擔此部分之風險。
+                            </li>
                             <li>若您提供錯誤或不實的資料，MVWOW.com有權得拒絕您以該帳號使用網站之全部或部份服務。</li>
                         </ol>
                     </li>

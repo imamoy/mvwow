@@ -18,6 +18,9 @@ $(function () {
 		$('header .menu .sub-toggle').click(function(){
 			$(this).find('.sub-nav').slideToggle().parent().siblings().find('.sub-nav').slideUp();
 		});
+		$('header .search-toggle').click(function(){
+			$(this).next('.search').slideToggle();
+		});
 	}
 
 
