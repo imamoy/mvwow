@@ -19,7 +19,6 @@ $(function () {
 	if ($(window).width() < 641) { 
 		$('header .menu .sub-toggle').click(function(){
 			$(this).find('.sub-nav').slideToggle().parent().siblings().find('.sub-nav').slideUp();
-			$('.main-header').toggleClass('active');
 		});
 		$('header .search-toggle').click(function(){
 			$(this).next('.search').slideToggle();
