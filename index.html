@@ -113,7 +113,13 @@
    
     <!-- banner start -->
     <div class="bannerBox">
-        <div class="banner"></div>
+        <div class="banner">
+            <ul class="slider">
+                <li><img src="images/jordan-mixson-372435-unsplash.jpg" alt=""></li>
+                <li><img src="images/jordan-mixson-372435-unsplash.jpg" alt=""></li>
+                <li><img src="images/jordan-mixson-372435-unsplash.jpg" alt=""></li>
+            </ul>
+        </div>
     </div>
     <!-- banner end -->
     <!-- 原創發表 start -->
@@ -1008,5 +1014,14 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+    $(function(){
+        $('.bannerBox .slider').slick({
+            arrows: false,
+            dots: true
+        });
+    });
+</script>
 
 </html>
