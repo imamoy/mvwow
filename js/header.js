@@ -1,13 +1,26 @@
 $(function () {
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 10) { /* 要滑動到選單的距離 */
-			$('.m_nav').addClass('navfix'); /* 幫選單加上固定效果 */
-			$('.m_nav .menu .logo').removeClass('hide');
+			$('header .menu').addClass('navfix'); /* 幫選單加上固定效果 */
+			$('header .menu .logo').removeClass('hide');
 		} else {
-			$('.m_nav').removeClass('navfix'); /* 移除選單固定效果 */
-			$('.m_nav .menu .logo').addClass('hide');
+			$('header .menu').removeClass('navfix'); /* 移除選單固定效果 */
+			$('header .menu.logo').addClass('hide');
 		}
 	});
+
+	$(".menu-toggle").click(function() {
+		$(this).toggleClass('active');
+		$(this).next(".menu").toggleClass('active');
+	});
+
+	if ($(window).width() < 641) { 
+		$('header .menu .sub-toggle').click(function(){
+			$(this).find('.sub-nav').slideToggle().parent().siblings().find('.sub-nav').slideUp();
+		});
+	}
+
+
 });
 
 $(function () {

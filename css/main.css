@@ -154,6 +154,7 @@ header {
     header {
         overflow: hidden;
     }
+
     .main-header {
         width: 90%;
         height: auto;
@@ -203,6 +204,7 @@ header {
         background-size: contain;
         background-position: center;
     }
+
     .main-header .header_left .icon-logo:before {
         display: none;
     }
@@ -233,7 +235,7 @@ header {
     }
 }
 
-.main-header .header_right .header_c .login {
+header .header_c .login {
     background: #b13120;
     color: #fff;
     width: auto;
@@ -248,20 +250,20 @@ header {
     transition: .2s ease-out;
 }
 
-.main-header .header_right .header_c .login:hover {
+header .header_c .login:hover {
     background: #b93625;
 }
 
-.main-header .header_right .header_c .login a {
+header .header_c .login a {
     margin: 0px 8px;
     color: #fff;
 }
 
-.main-header .header_right .header_c .login a span {
+header .header_c .login a span {
     padding-right: 3px;
 }
 
-.main-header .header_right .header_c .fb_icon {
+header .header_c .fb_icon {
     background: #3B5998;
     color: #fff;
     width: 146px;
@@ -274,7 +276,7 @@ header {
     transition: .2s ease-out;
 }
 
-.main-header .header_right .header_c .logout {
+header .header_c .logout {
     background: #acacac;
     color: #fafafa;
     width: 72px;
@@ -288,11 +290,11 @@ header {
     cursor: pointer;
 }
 
-.main-header .header_right .header_c .fb_icon a {
+header .header_c .fb_icon a {
     color: #fff;
 }
 
-.main-header .header_right .header_c .fb_icon:hover {
+header .header_c .fb_icon:hover {
     background: #00508d;
 }
 
@@ -338,6 +340,7 @@ header {
     right: 10px;
     z-index: -1;
 }
+
 @media screen and (min-width:641px) {
     .main-header .header_right .search-toggle {
         display: none;
@@ -351,7 +354,7 @@ header {
 }
 
 @media all and (min-width: 0px) and (max-width:640px) {
-    .main-header .header_right .search-toggle{
+    .main-header .header_right .search-toggle {
         display: block;
         font-size: 22px;
         position: absolute;
@@ -360,7 +363,21 @@ header {
         margin-top: 1px;
         transform: translateY(-50%);
     }
+
     .main-header .header_right .search {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    header .header_c .login {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    header .header_c .login a{
+        width: 50%;
+        text-align: center;
+    }
+    header .header_c .fb_icon {
         width: 100%;
     }
 }
@@ -387,7 +404,9 @@ header {
         width: 300px;
     }
 }
-@media screen and (max-width: 640px) { 
+
+@media screen and (max-width: 640px) {
+
     .main-header .header_right .header_c,
     .main-header .header_right .search {
         display: none;
@@ -480,17 +499,18 @@ header .menu-toggle.active .hamburger::after {
         display: block;
     }
 }
+
 /* 漢堡選單 結束 */
 
 /*子選單 開始*/
-header .menu  {
+header .menu {
     width: 100%;
     margin: 0 auto;
     background: #b13120;
     z-index: 100;
 }
 
-header .menu > ul {
+header .menu>ul {
     position: relative;
     max-width: 1140px;
     height: 42px;
@@ -500,7 +520,7 @@ header .menu > ul {
     justify-content: flex-start;
 }
 
-header .menu > ul li {
+header .menu>ul li {
     position: relative;
     height: 42px;
     display: flex;
@@ -509,7 +529,7 @@ header .menu > ul li {
     transition: .2s ease-out;
 }
 
-header .menu > ul li:after {
+header .menu>ul li:after {
     position: absolute;
     background: #a12717;
     height: 20px;
@@ -518,11 +538,11 @@ header .menu > ul li:after {
     top: 12px;
 }
 
-header .menu > ul li:hover:after {
+header .menu>ul li:hover:after {
     background: none;
 }
 
-header .menu > ul a {
+header .menu>ul a {
     font-size: 18px;
     padding: 0px 15px;
     height: 42px;
@@ -533,21 +553,28 @@ header .menu > ul a {
     justify-content: center;
 }
 
-header .menu > ul li a:hover {
+header .menu>ul li a:hover {
     color: #fff;
     background: #b93625;
 }
 
-    /*sub - nav*/
+/*sub - nav*/
 header .menu .sub-nav {
     display: none;
+    z-index: 99;
 }
 
 @media screen and (min-width: 641px) {
-    header .menu > ul .sub-toggle {
+    header .menu>ul .sub-toggle {
         position: relative;
     }
-    
+    header .menu>ul li.pc_hide {
+        display: none;
+    }
+    header .menu>ul li i {
+        display: none;
+    }
+
     header .menu .sub-toggle:hover .sub-nav {
         display: block;
         background-color: #8b8b8b;
@@ -558,10 +585,147 @@ header .menu .sub-nav {
     header .menu .header_c {
         display: none;
     }
+    header .menu .member-bar {
+        display: none;
+    }
 }
+
 @media screen and (max-width: 640px) {
     header .menu {
+        display: block;
+        width: 100%;
+        height: calc(100vh - 87px);
+        max-width: none;
+        background-color: #E5E5E5;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px;
+        position: fixed;
+        top: 87px;
+        left: -100%;
+        -webkit-transition:left 0.25s ease-in-out;
+        transition: left 0.25s ease-in-out;
+        box-sizing: border-box;
+    }
+
+    header .menu::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 87px;
+        left: -100%;
+    }
+
+    header .menu.active {
+        left: 0;
+    }
+
+    header .menu.active::after {
+        -webkit-animation: mask-animate .8s ease;
+        animation: mask-animate .8s ease;
+    }
+    header .menu .phone_hide {
         display: none;
+    }
+    header .menu .member-bar {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        background-color: #b93625;
+        margin: -20px -20px 20px;
+    }
+    header .menu .member-bar i {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    header .menu > ul {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    header .menu > ul li {
+        width: 100%;
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px dotted #555;
+    }
+    header .menu > ul li:first-child{
+        border: none;
+    }
+
+    header .menu > ul li a {
+        display: inline-block;
+        line-height: 40px;
+        text-align: justify;
+        font-weight: normal;
+        color: #555;
+    }
+    header .menu > ul li a i {
+        margin-right: 20px;
+    }
+    header .menu > ul li::after {
+        display: none;
+    }
+    header .menu .sub-nav{
+        margin: 10px 10px;
+    }
+    header .menu .sub-nav ul li {
+        height: 42px;
+        background: #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        font-size: 16px;
+        -webkit-transition: .2s ease-out;
+        padding: 5px 0;
+        margin: 0;
+        border-top: 1px solid #FFF;
+        border-bottom: 1px solid #ddd;
+        transition: .2s ease-out;
+    }
+    header .menu .sub-nav ul li.active {
+        background: #b13120;
+    }
+
+    header .menu .sub-nav ul li a::before {
+        content: "\ea16";
+        display: inline-block;
+        font-family: 'icomoon' !important;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    header .user-out {
+        display: flex;
+        height: 40px;
+        padding: 10px 0;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #555;
+        margin-top: 20px;
+    }
+    header .user-out i{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-image: url(../images/user-out.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 20px;
     }
 }
 
@@ -1114,7 +1278,7 @@ header .menu .sub-nav {
 }
 
 .rulesBox .box01 {
-    max-width: 1140px;
+    max-width: 900px;
     margin: 20px auto 100px auto;
 }
 
