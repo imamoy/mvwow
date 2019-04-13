@@ -628,6 +628,7 @@ header .menu .sub-nav {
         -webkit-transition:left 0.25s ease-in-out;
         transition: left 0.25s ease-in-out;
         box-sizing: border-box;
+        padding-bottom: 80px;
     }
 
     header .menu::after {
