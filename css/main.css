@@ -133,6 +133,7 @@ header {
 button,input[type="submit"],input[type="button"] {
     border-radius: 0;
     background-image: none;
+    -webkit-border-radius:0px;
 }
 
 .mt30 {
