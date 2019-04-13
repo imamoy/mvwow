@@ -781,6 +781,7 @@ header .menu .sub-nav {
     .main-header .header_right .search .b_select {
         width: 100%;
         border-right: 1px solid #acacac;
+        margin: 0;
     }
     .main-header .header_right .search .search_b {
         width: 100%!important;
