@@ -753,16 +753,25 @@ header .menu .sub-nav {
         background-size: contain;
         margin-right: 20px;
     }
-    /* header .search {
-        height: auto!important;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        background-color: #FFF;
-        padding: 10px 18px;
-        box-sizing: border-box;
-        z-index: 99;
-    } */
+    .main-header .header_right .search {
+        height: auto;
+    }
+    .main-header .header_right .search .formBox {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
+        width: 46%;
+    }
+    .main-header .header_right .search .b_select {
+        width: 100%;
+        border-right: 1px solid #acacac;
+    }
+    .main-header .header_right .search .search_b {
+        margin-top: 8px;
+        width: 100%!important;
+        position: static;
+    }
 }
 
 /* 子選單 結束*/
