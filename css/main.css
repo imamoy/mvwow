@@ -767,7 +767,7 @@ header .menu .sub-nav {
         height: auto;
     }
     .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
-        width: 46%;
+        width: 50%;
     }
     .main-header .header_right .search .b_select {
         width: 100%;
