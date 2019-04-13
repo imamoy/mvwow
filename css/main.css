@@ -146,13 +146,16 @@ input[type="submit"],input[type="button"] {
     box-sizing: border-box;
 }
 input {
-    background:none;  
+    background: transparent;  
 	outline:none;  
 	border:0px;
-    border-radius: 0;
+    border-radius: 0!important;
+    -webkit-border: none;
+    -moz-border: none;
     -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
     -moz-appearance: none;     /* FireFox */
     appearance: none;
+    box-shadow: 0 0 0 0;
 }
 .mt30 {
     margin-top: 30px!important;
@@ -768,6 +771,7 @@ header .menu .sub-nav {
     .main-header .header_right .search .formBox {
         flex-wrap: wrap;
         height: auto;
+        z-index: 999999;
     }
     .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
         width: 50%;
