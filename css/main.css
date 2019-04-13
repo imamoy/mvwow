@@ -774,7 +774,7 @@ header .menu .sub-nav {
         z-index: 999999;
     }
     .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
-        width: 50%;
+        width: calc(50% - 13px)!important;
     }
     .main-header .header_right .search .b_select {
         width: 100%;
