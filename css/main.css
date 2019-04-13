@@ -145,7 +145,7 @@ input[type="submit"],input[type="button"] {
     padding: 0;
     box-sizing: border-box;
 }
-input {
+input,textarea {
     background: transparent;  
 	outline:none;  
 	border:0px;
@@ -774,14 +774,15 @@ header .menu .sub-nav {
         z-index: 999999;
     }
     .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
-        width: calc(50% - 13px)!important;
+        flex-grow: 1;
+        width: 100%;
+        margin-bottom: 8px;
     }
     .main-header .header_right .search .b_select {
         width: 100%;
         border-right: 1px solid #acacac;
     }
     .main-header .header_right .search .search_b {
-        margin-top: 8px;
         width: 100%!important;
         position: static;
     }
