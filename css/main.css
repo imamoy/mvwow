@@ -776,7 +776,7 @@ header .menu .sub-nav {
     .main-header .header_right .search .search_in,.main-header .header_right .search .searchselect {
         flex-grow: 1;
         width: 100%;
-        margin-bottom: 8px;
+        margin: 0 0 8px;
     }
     .main-header .header_right .search .b_select {
         width: 100%;
