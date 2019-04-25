@@ -16,9 +16,13 @@
     background-size: cover;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width: 767px) {
     .banner {
+        height: auto;
         margin: 0 auto;
+    }
+    .banner img {
+        width: 125%;
     }
 }
 
@@ -38,7 +42,7 @@
     overflow-x: hidden;
 }
 
-@media all and (min-width: 641px) and (max-width:1140px) {
+@media all and (min-width: 768px) and (max-width:1140px) {
 
     .originalBox,
     .masterBox {
@@ -75,7 +79,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
 
     .originalBox,
     .masterBox {
@@ -159,7 +163,7 @@
     margin-bottom: 20px;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
 
     .originalBox .videoBox .container .org_list,
     .masterBox .videoBox .container .mas_list {
@@ -169,7 +173,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
 
     .originalBox .videoBox .container .org_list,
     .masterBox .videoBox .container .mas_list {
@@ -194,7 +198,7 @@
     margin-right: 0%;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
 
     .originalBox .videoBox .container .org_list:nth-child(3n),
     .masterBox .videoBox .container .mas_list:nth-child(3n) {
@@ -207,7 +211,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
 
     .originalBox .videoBox .container .org_list:nth-child(3n),
     .masterBox .videoBox .container .mas_list:nth-child(3n) {
@@ -298,7 +302,7 @@
     padding-right: 6px;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
 
     .originalBox .videoBox .moreBox .moreBtn a,
     .masterBox .videoBox .moreBox .moreBtn a {

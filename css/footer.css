@@ -14,13 +14,13 @@
     color: #fff;
 }
 
-@media all and (min-width: 641px) and (max-width:1140px) {
+@media all and (min-width: 768px) and (max-width:1140px) {
     .mainfoot .container {
         width: 100%;
     }
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .mainfoot .container {
         width: 100%;
         height: auto;
@@ -50,7 +50,7 @@
     color: rgb(255, 200, 200);
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .mainfoot .container .footLink {
         width: 100%;
         justify-content: center;

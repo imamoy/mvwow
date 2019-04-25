@@ -27,7 +27,7 @@ select::-ms-expand {
     overflow-x: hidden;
 }
 
-@media all and (min-width: 641px) and (max-width:1140px) {
+@media all and (min-width: 768px) and (max-width:1140px) {
     .originalBox {
         position: relative;
         width: 90%;
@@ -57,7 +57,7 @@ select::-ms-expand {
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
     .originalBox {
         position: relative;
         width: 96%;
@@ -109,7 +109,7 @@ select::-ms-expand {
 
 @media all and (min-width: 0px) and (max-width:480px) {
     .originalBox .videoBox {
-        padding-bottom: 100px;
+        padding-bottom: 40px;
     }
 }
 
@@ -128,7 +128,7 @@ select::-ms-expand {
     margin-bottom: 20px;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .originalBox .videoBox .container .org_list {
         width: 32.5%;
         margin-right: 1.2%;
@@ -146,7 +146,7 @@ select::-ms-expand {
     margin-right: 0%;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .originalBox .videoBox .container .w50 {
         width: 100%;
         margin-right: 0%;
@@ -168,7 +168,7 @@ select::-ms-expand {
     margin-right: 0%;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .originalBox .videoBox .container .org_list:nth-child(3n) {
         margin-right: 0%;
     }
@@ -190,7 +190,7 @@ select::-ms-expand {
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
     .originalBox .videoBox .container .org_list:nth-child(3n) {
         margin-right: 1.2%;
     }
@@ -214,7 +214,7 @@ select::-ms-expand {
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
     .originalBox .videoBox .container .org_list {
         width: 49%;
         margin-right: 1.5%;
@@ -293,7 +293,7 @@ select::-ms-expand {
     padding-right: 6px;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .originalBox .videoBox .moreBox .moreBtn a {
         width: 100%;
     }
@@ -394,7 +394,7 @@ select::-ms-expand {
 .originalBox .videoBox .box_c .searchBox .music_s:hover {
     background: #b93625;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .originalBox .videoBox .box_c .searchBox .searchselect{ 
         width: calc(50% - 5px);
         margin-right: 0;

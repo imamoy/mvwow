@@ -19,7 +19,7 @@
     margin: 40px 0px 0px 0px;
 }
 
-@media all and (min-width: 641px) and (max-width:1140px) {
+@media all and (min-width: 768px) and (max-width:1140px) {
 
     .videoContainer,
     .videoinfoBox {
@@ -186,7 +186,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
 
     .videoContainer,
     .videoinfoBox {
@@ -261,7 +261,7 @@
     margin-bottom: 20px;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .videoinfoBox .infoBox .container .org_list {
         width: 32.5%;
         margin-right: 1.2%;
@@ -279,7 +279,7 @@
     margin-right: 0%;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .videoinfoBox .infoBox .container .w50 {
         width: 100%;
         margin-right: 0%;
@@ -301,7 +301,7 @@
     margin-right: 0%;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .videoinfoBox .infoBox .container .org_list:nth-child(3n) {
         margin-right: 0%;
     }
@@ -323,7 +323,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
     .videoinfoBox .infoBox .container .org_list:nth-child(3n) {
         margin-right: 1.2%;
     }
@@ -347,7 +347,7 @@
     }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
     .videoinfoBox .infoBox .container .org_list {
         width: 49%;
         margin-right: 1.5%;
@@ -426,7 +426,7 @@
     padding-left: 6px;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width: 767px) {
     .videoinfoBox .infoBox .moreBox .moreBtn a {
         width: 100%;
     }

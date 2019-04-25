@@ -145,7 +145,7 @@ input[type="submit"],input[type="button"] {
     padding: 0;
     box-sizing: border-box;
 }
-input,textarea {
+input:not('.checkbox'),textarea {
     background: transparent;  
 	outline:none;  
 	border:0px;
@@ -165,21 +165,18 @@ input,textarea {
 }
 
 .main-header {
-    max-width: 1140px;
+    max-width: calc(1130px + 72px);
     height: 120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 36px;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
-    .main-header {
-        width: 96%;
-    }
-}
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     header {
         overflow: hidden;
     }
@@ -196,7 +193,7 @@ input,textarea {
     width: 30%;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     .main-header .header_left {
         width: 100%;
         display: flex;
@@ -210,19 +207,19 @@ input,textarea {
     color: #d23d29;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .main-header .header_left span {
         font-size: 72px;
     }
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     .main-header .header_left span {
         font-size: 80px;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:767px) {
     .main-header.active {
         position: fixed;
         top: 0;
@@ -249,7 +246,7 @@ input,textarea {
     width: 50%;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     .main-header .header_right {
         width: 100%;
     }
@@ -263,7 +260,7 @@ input,textarea {
     margin-bottom: 10px;
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     .main-header .header_right .header_c {
         justify-content: center;
         margin-bottom: 15px;
@@ -376,19 +373,19 @@ header .header_c .fb_icon:hover {
     z-index: -1;
 }
 
-@media screen and (min-width:641px) {
+@media screen and (min-width:768px) {
     .main-header .header_right .search-toggle {
         display: none;
     }
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .main-header .header_right .search {
         width: 380px;
     }
 }
 
-@media all and (min-width: 0px) and (max-width:640px) {
+@media all and (min-width: 0px) and (max-width:767px) {
     .main-header .header_right .search-toggle {
         display: inline-flex;
         width: 30px;
@@ -407,7 +404,7 @@ header .header_c .fb_icon:hover {
         margin-top: 20px;
     }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     header .header_c .login {
         margin-right: 0;
         margin-bottom: 10px;
@@ -438,13 +435,13 @@ header .header_c .fb_icon:hover {
     padding: 8px;
 }
 
-@media all and (min-width: 641px) and (max-width:1024px) {
+@media all and (min-width: 768px) and (max-width:1024px) {
     .main-header .header_right .search .formBox .search_in {
         width: 300px;
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
 
     .main-header .header_right .header_c,
     .main-header .header_right .search {
@@ -531,7 +528,7 @@ header .menu-toggle.active .hamburger::after {
     transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     header .menu-toggle {
         display: block;
     }
@@ -549,12 +546,14 @@ header .menu {
 
 header .menu>ul {
     position: relative;
-    max-width: 1140px;
+    max-width: calc(1130px + 72px);
     height: 42px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 36px;
 }
 
 header .menu>ul li {
@@ -601,7 +600,7 @@ header .menu .sub-nav {
     z-index: 99;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 768px) {
     header .menu>ul .sub-toggle {
         position: relative;
     }
@@ -627,7 +626,7 @@ header .menu .sub-nav {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     header .menu {
         display: block;
         width: 100%;
@@ -1212,14 +1211,21 @@ header .menu .sub-nav {
 
 .signupBox .box01 .loginform .input_content {
     position: relative;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 40px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-
 }
-
+@media screen and (max-width: 480px) {
+    .signupBox .box01 .b_title h3{
+        width: 90%;
+    }
+    .signupBox .box01 .loginform .input_content {
+        width: 90%;
+    }
+}
 .signupBox .box01 .loginform .input_content2 {
     border: none;
     margin-top: -1px;
@@ -1316,6 +1322,15 @@ header .menu .sub-nav {
 .signupBox .box01 .loginform .button a {
     color: #fff;
 }
+@media screen and (max-width: 480px) {
+    .signupBox .box01 .loginform .button {
+        margin-left: 95px;
+        margin-right: 5%;
+    }
+    .signupBox .box01 .loginform .f_member_remember {
+        padding-left: 90px;
+    }
+}
 
 .signupBox .box01 .loginform .another {
     display: flex;
@@ -1348,7 +1363,7 @@ header .menu .sub-nav {
     max-width: 900px;
     margin: 20px auto 100px auto;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .rulesBox .box01 {
         width: calc(100% - 40px);
     }
@@ -1531,7 +1546,7 @@ header .menu .sub-nav {
     margin: 40px auto 0;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 767px){
     .message-box {
         margin-bottom: 40px;
     }
@@ -1621,7 +1636,7 @@ header .menu .sub-nav {
     font-size: 18px;
     position: absolute;
 }
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 768px) {
     .news .b_title {
         position: relative;
     }
@@ -1630,7 +1645,7 @@ header .menu .sub-nav {
         left: 0;
     }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
     .news .box01 {
         position: relative;
     }
