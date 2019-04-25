@@ -82,6 +82,11 @@ td {
     }
 }
 
+html,body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     line-height: 1;
     color: black;
