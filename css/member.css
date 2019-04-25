@@ -1008,7 +1008,8 @@ select::-ms-expand {
 }
 
 .black_Zone .Area {
-    width: 480px;
+    width: 95%;
+    max-width: 480px;
     height: auto;
     padding: 35px 20px;
     display: flex;
@@ -1016,8 +1017,13 @@ select::-ms-expand {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 300px;
+    /* margin-top: 50%; */
     background: #fff;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
 
 .black_Zone .Area .btn {
@@ -1067,6 +1073,19 @@ select::-ms-expand {
     font-size: 12px;
     line-height: 2;
     position: relative;
+}
+@media screen and (max-width: 480px) {
+    .black_Zone .Area .loginform .input_content{
+        height: auto;
+        flex-direction: column;
+    }
+    .black_Zone .Area .loginform .input_content .title{
+        width: 100%;
+        text-align: left;
+        display: block;
+        box-sizing: border-box;
+        padding: 0;
+    }
 }
 
 .black_Zone .Area .loginform .input_content .title b {
@@ -1127,6 +1146,14 @@ select::-ms-expand {
     align-items: center;
     justify-content: center;
     color: #fff
+}
+@media screen and (max-width: 767px){
+    .black_Zone .Area .loginform .input_content span.confirm,
+    .black_Zone .Area .loginform .input_content span.sendcode {
+        top: auto;
+        bottom: 5px;
+        right: 2px;
+    }
 }
 
 .black_Zone2 .Area .btn a {

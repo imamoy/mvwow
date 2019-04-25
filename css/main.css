@@ -157,6 +157,9 @@ input:not('.checkbox'),textarea {
     appearance: none;
     box-shadow: 0 0 0 0;
 }
+.checkbox {
+    margin-right: 5px;
+}
 .mt30 {
     margin-top: 30px!important;
 }
@@ -616,6 +619,7 @@ header .menu .sub-nav {
         background-color: #8b8b8b;
         position: absolute;
         top: 100%;
+        left: 0;
     }
 
     header .menu .header_c {
@@ -1678,4 +1682,20 @@ header .menu .sub-nav {
     .b_video iframe, .masterBox .b_video iframe {
         height: 220px !important;
     }
+}
+
+
+.news .moreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 35px;
+    background: #b13120;
+    color: #fff;
+    border: 1px solid #b13120;
+    margin: -40px auto 60px;
+}
+.news .moreBtn a{
+    color: #FFF;
 }
