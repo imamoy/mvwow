@@ -479,6 +479,10 @@
     background: #888 !important;
     cursor: default;
 }
+.videoinfoBox .infoBox .box_c a.grey:hover{
+    color: #fff;
+    background: #b13120!important;
+}
 
 .videoinfoBox .infoBox .box_c .searchBox {
     display: flex;

@@ -860,6 +860,12 @@
     float: right;
     position: relative;
 }
+.cm_list .s_comment .mg_info .mg_rate > *{
+    cursor: pointer;
+}
+.cm_list .s_comment .mg_info .mg_rate > *:hover{
+    opacity: .8;
+}
 
 .videoContainer .container .page_main .messageBox .cm_list .s_comment .mg_info .mg_rate .icon-happy em {
     font-size: 14px;

@@ -36,17 +36,17 @@
                 </div>
                 <span class="search-toggle"><i class="icon-search"></i></span>
                 <div class="search">
-                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="result.html">
                         <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
                         <div class="searchselect">
                             <select class="b_select" name="search-type">
-                                <option value="">會員編號、別名</option>
                                 <option value="">影片標題</option>
+                                <option value="">會員編號、別名</option>
                                 <option value="">影片介紹</option>
                                 <option value="">會員介紹</option>
                             </select>
                         </div>
-                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                        <input type="submit" name="button" id="button" value="search" class="search_b" onclick="javascript:location.href='result.html'">
                     </form>
                 </div>
             </div>
@@ -94,6 +94,7 @@
                 <li class="phone_hide">
                     <a href="offers.html" title="優惠活動">優惠活動</a>
                 </li>
+                <li><a href="track-index.html" title="近況追蹤"><i class="icon-home3"></i>近況追蹤</a></li>
             </ul>
             <div class="header_c">
                 <div class="login">

@@ -163,6 +163,14 @@ input:not('.checkbox'),textarea {
     appearance: none;
     box-shadow: 0 0 0 0;
 }
+
+a {
+    color: #606060;
+}
+a:hover {
+    color: #909090;
+}
+
 .checkbox {
     margin-right: 5px;
 }

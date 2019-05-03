@@ -94,6 +94,7 @@
                 <li class="phone_hide">
                     <a href="offers.html" title="優惠活動">優惠活動</a>
                 </li>
+                <li><a href="track-index.html" title="近況追蹤"><i class="icon-home3"></i>近況追蹤</a></li>
             </ul>
             <div class="header_c">
                 <div class="login">
@@ -111,70 +112,67 @@
     <!-- header end -->
     <!-- 原創發表 start -->
     <div class="originalBox">
-        <div class="titleBox">
+        <div class="titleBox andSerchbox">
             <div class="container">
                 <h2>
-                    <a href="master.html">一般發表</a>
+                    <a href="track-index.html">近況追蹤</a>
                 </h2>
+                <div class="videoBox">
+                    <div class="box_c">
+                        <div class="searchBox">
+                            <div class="searchselect">
+                                <select class="b_select" name="time">
+                                    <option value="">時間選擇</option>
+                                    <option value="0">一週</option>
+                                    <option value="1">一個月</option>
+                                    <option value="2">三個月</option>
+                                    <option value="3">半年</option>
+                                    <option value="4">一年內</option>
+                                </select>
+                            </div>
+                            <div class="searchselect">
+                                <select class="b_select" name="music_type">
+                                    <option value="">音樂類型</option>
+                                    <option value="-43">小堂鼓</option>
+                                    <option value="-42">大鼓</option>
+                                    <option value="-41">月琴</option>
+                                    <option value="-40">琵琶</option>
+                                    <option value="-39">柳琴</option>
+                                    <option value="-38">古箏</option>
+                                    <option value="-37">揚琴</option>
+                                    <option value="-36">二胡</option>
+                                    <option value="-35">蕭</option>
+                                    <option value="-34">笙</option>
+                                    <option value="-33">笛子</option>
+                                    <option value="-32">聲樂</option>
+                                    <option value="-31">流行歌唱</option>
+                                    <option value="-30">小號</option>
+                                    <option value="-29">單雙簧</option>
+                                    <option value="-28">長笛</option>
+                                    <option value="-27">薩克斯風</option>
+                                    <option value="-26">古典貝斯</option>
+                                    <option value="-25">電貝斯</option>
+                                    <option value="-24">電吉他</option>
+                                    <option value="-23">流行民謠吉他</option>
+                                    <option value="-22">古典吉他</option>
+                                    <option value="-21">大提琴</option>
+                                    <option value="-20">中提琴</option>
+                                    <option value="-19">小提琴</option>
+                                    <option value="-18">流行鋼琴</option>
+                                    <option value="-17">爵士鋼琴</option>
+                                    <option value="-16">古典鋼琴</option>
+                                </select>
+                            </div>
+
+                            <input type="button" value="search" class="music_s" onclick="procQueryBtn(this)">
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 最受好評 start -->
         <div class="videoBox">
-            <div class="box_c">
-                <div class="t_main">
-                    <a href="master-good.html">最受好評</a>
-                    <a href="master-new.html"  class="active">最新發表</a>
-                    <a href="master-more.html">最多點閱</a>
-                </div>
-                <div class="searchBox">
-                    <div class="searchselect">
-                        <select class="b_select" name="time">
-                            <option value="">時間選擇</option>
-                            <option value="0">一週</option>
-                            <option value="1">一個月</option>
-                            <option value="2">三個月</option>
-                            <option value="3">半年</option>
-                            <option value="4">一年內</option>
-                        </select>
-                    </div>
-                    <div class="searchselect">
-                        <select class="b_select" name="music_type">
-                            <option value="">音樂類型</option>
-                            <option value="-43">小堂鼓</option>
-                            <option value="-42">大鼓</option>
-                            <option value="-41">月琴</option>
-                            <option value="-40">琵琶</option>
-                            <option value="-39">柳琴</option>
-                            <option value="-38">古箏</option>
-                            <option value="-37">揚琴</option>
-                            <option value="-36">二胡</option>
-                            <option value="-35">蕭</option>
-                            <option value="-34">笙</option>
-                            <option value="-33">笛子</option>
-                            <option value="-32">聲樂</option>
-                            <option value="-31">流行歌唱</option>
-                            <option value="-30">小號</option>
-                            <option value="-29">單雙簧</option>
-                            <option value="-28">長笛</option>
-                            <option value="-27">薩克斯風</option>
-                            <option value="-26">古典貝斯</option>
-                            <option value="-25">電貝斯</option>
-                            <option value="-24">電吉他</option>
-                            <option value="-23">流行民謠吉他</option>
-                            <option value="-22">古典吉他</option>
-                            <option value="-21">大提琴</option>
-                            <option value="-20">中提琴</option>
-                            <option value="-19">小提琴</option>
-                            <option value="-18">流行鋼琴</option>
-                            <option value="-17">爵士鋼琴</option>
-                            <option value="-16">古典鋼琴</option>
-                        </select>
-                    </div>
-
-                    <input type="button" value="search" class="music_s" onclick="procQueryBtn(this)">
-                </div>
-
-            </div>
             <div class="container">
                 <div class="org_list w50">
                     </a>
@@ -305,7 +303,7 @@
                             <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
                         </a>
                         <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
                     </div>
                     <div class="b_info">
                         <div class="views">1287520 views</div>
@@ -642,7 +640,7 @@
             <div class="moreBox">
                 <div class="moreBtn big">
                     <a href="">
-                        載入更多一般最新發表(20/100)….
+                        載入更多近況追蹤(20/100)….
                     </a>
                 </div>
             </div>

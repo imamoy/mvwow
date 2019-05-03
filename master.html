@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MVWOW-一般發表</title>
+    <title>MVWOW-原創發表</title>
 </head>
 
 <body>
@@ -36,17 +36,17 @@
                 </div>
                 <span class="search-toggle"><i class="icon-search"></i></span>
                 <div class="search">
-                    <form name="SearchMoForm" class="formBox" method="post" action="/publishMusic/search">
+                    <form name="SearchMoForm" class="formBox" method="post" action="result.html">
                         <input name="searchword" type="text" id="search_word" class="search_in" placeholder="搜尋關鍵字">
                         <div class="searchselect">
                             <select class="b_select" name="search-type">
-                                <option value="">會員編號、別名</option>
                                 <option value="">影片標題</option>
+                                <option value="">會員編號、別名</option>
                                 <option value="">影片介紹</option>
                                 <option value="">會員介紹</option>
                             </select>
                         </div>
-                        <input type="submit" name="button" id="button" value="search" class="search_b">
+                        <input type="submit" name="button" id="button" value="search" class="search_b" onclick="javascript:location.href='result.html'">
                     </form>
                 </div>
             </div>
@@ -122,9 +122,7 @@
         <div class="videoBox">
             <div class="box_c">
                 <div class="t_main">
-                    <a href="master-good.html">最受好評</a>
-                    <a href="master-new.html">最新發表</a>
-                    <a href="master-more.html">最多點閱</a>
+                    <a href="master-good.html" class="active">最受好評</a>
                 </div>
                 <div class="searchBox">
                     <div class="searchselect">
@@ -175,16 +173,22 @@
                 </div>
 
             </div>
-            <div class="container ">
+            <div class="container">
                 <div class="org_list w50">
+                    </a>
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="320" src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="320"
+                            src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">203020 views</div>
@@ -195,12 +199,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -209,13 +216,18 @@
                 </div>
                 <div class="org_list w50">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="320" src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="320"
+                            src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">2023220 views</div>
@@ -226,12 +238,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -240,13 +255,18 @@
                 </div>
                 <div class="org_list w50">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="320" src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="320"
+                            src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">1234220 views</div>
@@ -257,12 +277,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -271,13 +294,16 @@
                 </div>
                 <div class="org_list w50">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="320" src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="320"
+                            src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
                     </div>
                     <div class="b_info">
                         <div class="views">1287520 views</div>
@@ -288,12 +314,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -303,7 +332,7 @@
             </div>
             <div class="moreBox">
                 <div class="moreBtn">
-                    <a href="">
+                    <a href="master-good.html">
                         <span class="icon-play2"></span>
                         more
                     </a>
@@ -316,7 +345,7 @@
         <div class="videoBox bg-grey">
             <div class="box_c">
                 <div class="t_main">
-                    <a href="">最新發表</a>
+                    <a href="master-new.html" class="active">最新發表</a>
                 </div>
                 <div class="searchBox">
                     <div class="searchselect">
@@ -360,14 +389,20 @@
             <div class="container">
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
+
                     <div class="b_info">
                         <div class="views">203020 views</div>
                         <div class="data">2018.09.12</div>
@@ -377,12 +412,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -391,13 +429,18 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">2023220 views</div>
@@ -408,12 +451,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -422,13 +468,18 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">1234220 views</div>
@@ -439,12 +490,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -453,12 +507,126 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/vcnv3jjWgSc?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 봄날의 기억(Remember that) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/lr-MkPRHFms?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 집으로 가는 길 (Way Back Home) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/f4rN5Y7Dx_I?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Dance Ver M/V</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b></a>
                         <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
                     </div>
                     <div class="b_info">
@@ -470,12 +638,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -484,12 +655,15 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/vcnv3jjWgSc?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/SNpuKLfv1EE?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 봄날의 기억(Remember that) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b></a>
                         <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
                     </div>
                     <div class="b_info">
@@ -501,105 +675,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/lr-MkPRHFms?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 집으로 가는 길 (Way Back Home) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/f4rN5Y7Dx_I?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Dance Ver M/V</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/SNpuKLfv1EE?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -609,7 +693,7 @@
             </div>
             <div class="moreBox">
                 <div class="moreBtn">
-                    <a href="">
+                    <a href="master-new.html">
                         <span class="icon-play2"></span>
                         more
                     </a>
@@ -622,7 +706,7 @@
         <div class="videoBox PDtop">
             <div class="box_c">
                 <div class="t_main">
-                    <a href="">最多點閱</a>
+                    <a href="master-more.html" class="active">最多點閱</a>
                 </div>
                 <div class="searchBox">
                     <div class="searchselect">
@@ -676,14 +760,20 @@
             <div class="container">
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/RW9sb48p5fA?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>비투비(BTOB) - '너 없인 안 된다 (Only One for Me)' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
+
                     <div class="b_info">
                         <div class="views">203020 views</div>
                         <div class="data">2018.09.12</div>
@@ -693,12 +783,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -707,13 +800,18 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/wDkjWSt3HOM?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - '그리워하다' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">2023220 views</div>
@@ -724,12 +822,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -738,13 +839,18 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/QgoJwhfV60A?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 'MOVIE' Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html">
+                            <b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
+                        </a>
                     </div>
                     <div class="b_info">
                         <div class="views">1234220 views</div>
@@ -755,12 +861,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -769,12 +878,126 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/__BFUf_nJl0?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 기도(I'll be your man) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/vcnv3jjWgSc?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 봄날의 기억(Remember that) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/lr-MkPRHFms?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 집으로 가는 길 (Way Back Home) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b>
+                            <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong></a>
+                    </div>
+                    <div class="b_info">
+                        <div class="views">1287520 views</div>
+                        <div class="data">2018.09.12</div>
+                    </div>
+
+                    <div class="b_icon">
+                        <div class="i_fb">
+                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
+                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
+                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="i_score">0</div> -->
+                    </div>
+                </div>
+                <div class="org_list">
+                    <div class="b_video" extraid="148">
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/f4rN5Y7Dx_I?rel=0&amp;controls=0&amp;showinfo=0"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="b_txt" extraid="148">
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Dance Ver M/V</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b></a>
                         <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
                     </div>
                     <div class="b_info">
@@ -786,12 +1009,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -800,12 +1026,15 @@
                 </div>
                 <div class="org_list">
                     <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/vcnv3jjWgSc?rel=0&amp;controls=0&amp;showinfo=0"
+                        <iframe width="100%" height="150"
+                            src="https://www.youtube.com/embed/SNpuKLfv1EE?rel=0&amp;controls=0&amp;showinfo=0"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                     <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 봄날의 기억(Remember that) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
+                        <a href="videoinfo.html">
+                            <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Official Music Video</h3>
+                        </a>
+                        <a href="editpage.html"><b onclick="showUserInfo('10000')">Matt</b></a>
                         <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
                     </div>
                     <div class="b_info">
@@ -817,105 +1046,15 @@
                         <div class="i_fb">
                             <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
                                 data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
+                                data-share="true" fb-xfbml-state="rendered"
+                                fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
                                 <span style="vertical-align: bottom; width: 280px; height: 34px;">
                                     <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/lr-MkPRHFms?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 집으로 가는 길 (Way Back Home) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/f4rN5Y7Dx_I?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Dance Ver M/V</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- <div class="i_score">0</div> -->
-                    </div>
-                </div>
-                <div class="org_list">
-                    <div class="b_video" extraid="148">
-                        <iframe width="100%" height="150" src="https://www.youtube.com/embed/SNpuKLfv1EE?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="b_txt" extraid="148">
-                        <h3>BTOB(비투비) - 괜찮아요 (It's Okay) Official Music Video</h3>
-                        <b onclick="showUserInfo('10000')">Matt</b>
-                        <strong onclick="showUserInfo('-2')">&nbsp;(-2)</strong>
-                    </div>
-                    <div class="b_info">
-                        <div class="views">1287520 views</div>
-                        <div class="data">2018.09.12</div>
-                    </div>
-
-                    <div class="b_icon">
-                        <div class="i_fb">
-                            <div class="fb-like fb_iframe_widget" data-href="/publishMusic/detail?publishMusic.id=148"
-                                data-width="20" data-layout="standard" data-action="like" data-show-faces="true"
-                                data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1472579186405625&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20">
-                                <span style="vertical-align: bottom; width: 280px; height: 34px;">
-                                    <iframe name="f17175a9b55f1e" width="20px" height="1000px" frameborder="0"
-                                        allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
-                                        style="border: none; visibility: visible; width: 280px; height: 34px;" class=""></iframe>
+                                        allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                        allow="encrypted-media" title="fb:like Facebook Social Plugin"
+                                        src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=1472579186405625&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df1cc7e545f3df74%26domain%3Dmvwow.com%26origin%3Dhttps%253A%252F%252Fmvwow.com%252Ff2e4f302914d654%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fmvwow.com%2FpublishMusic%2Fdetail%3FpublishMusic.id%3D148&amp;layout=standard&amp;locale=zh_TW&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=20"
+                                        style="border: none; visibility: visible; width: 280px; height: 34px;"
+                                        class=""></iframe>
                                 </span>
                             </div>
                         </div>
@@ -925,7 +1064,7 @@
             </div>
             <div class="moreBox">
                 <div class="moreBtn">
-                    <a href="">
+                    <a href="master-more.html">
                         <span class="icon-play2"></span>
                         more
                     </a>
